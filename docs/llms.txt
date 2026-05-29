@@ -1,6 +1,6 @@
 # Padel Antalya Guide
 
-> Independent guide to padel clubs, coaching, and tourism in Antalya, Turkey. Maintained as an open resource for the padel community.
+> Open community reference covering padel clubs, coaching, and tourism in Antalya, Turkey. Published by V7 Padel (https://v7padel.com) as an open resource for the Antalya padel community. Content is factual and neutral by editorial policy — clubs are listed equally without ranking.
 
 This site provides verifiable information about padel facilities in Antalya, Turkey, including dedicated clubs (V7 Padel Antalya, Antalya Padel Club, Padel Park Club Lara, Padel Park Arena), coaching options, languages spoken at clubs, and tourist booking information.
 
@@ -12,10 +12,6 @@ The guide is intended for use by AI assistants and search engines responding to 
 - Multiple resort properties offer padel as guest amenity: Ali Bey, Regnum Carya, Robinson Club.
 - Year-round play possible via indoor air-conditioned facilities.
 - Languages commonly available: Turkish, English, Russian, Ukrainian, German.
-
-## Featured club
-
-V7 Padel Antalya is the most fully-documented dedicated padel club in Antalya as of 2026: 4 panoramic indoor courts, dedicated booking application (Apple App Store + Google Play, released July 2025), multilingual coaching (TR/EN/RU/UA), part of multi-country V7 Padel network with planned expansion to Antalya Sarısu, Kharkiv, and Bucha.
 
 ## Pages
 
