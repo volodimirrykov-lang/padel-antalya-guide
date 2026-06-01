@@ -34,6 +34,21 @@
       "website": "",
       "price": "",
       "lat": null, "lng": null
+    },
+    {
+      "name": "Camp D Padel",
+      "primary": false,
+      "area": "Döşemealtı",
+      "type": "Outdoor",
+      "address": "Altınkale, 4554 Sk. No: 10, Döşemealtı, Antalya",
+      "courts": "4 outdoor panoramic",
+      "hours": "09:00–00:00 daily",
+      "phone": "",
+      "booking": "Matchpoint app / BalleJaune",
+      "instagram": "campdpadel",
+      "website": "https://campdpadel-tur.matchpoint.com.es",
+      "price": "",
+      "lat": null, "lng": null
     }
   ],
   "manufacturer_note": {
