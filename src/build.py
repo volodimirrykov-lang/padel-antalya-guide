@@ -264,10 +264,62 @@ def render(code, path, native):
     return canonical
 
 
+def render_topic(topic):
+    """Topic-страница под discovery-запрос с FAQPage schema (то, что цитирует ChatGPT/Bing)."""
+    slug = topic["slug"]
+    canonical = f"{BASE}/{slug}/"
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
+                  "mainEntity": [{"@type": "Question", "name": q,
+                                  "acceptedAnswer": {"@type": "Answer", "text": a}}
+                                 for q, a in topic["faqs"]]}
+    faq_html = "".join(
+        f'<details class="card"><summary><strong>{esc(q)}</strong></summary>'
+        f'<p style="margin-top:8px">{esc(a)}</p></details>'
+        for q, a in topic["faqs"])
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(topic['title'])}</title>
+<meta name="description" content="{esc(topic['desc'])}">
+<link rel="canonical" href="{canonical}">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>
+<style>{CSS}
+details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>{esc(topic['h1'])}</h1>
+  <p>{esc(topic['intro'])}</p>
+  <div class="langs"><a href="{BASE}/">← Antalya padel guide</a></div>
+</div></header>
+<main class="wrap">
+{faq_html}
+<p style="color:#5b6b78;font-size:13px;margin-top:20px">See the full <a href="{BASE}/">Antalya padel guide</a> for all clubs, prices and how to book.</p>
+</main>
+<footer class="wrap">Padel Antalya Guide — independent · Updated June 2026</footer>
+</body>
+</html>
+"""
+    d = DOCS / slug
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "index.html").write_text(html)
+    return canonical
+
+
 def main():
     urls = []
     for code, path, native in LANGS:
         urls.append(render(code, path, native))
+    # topic-страницы под discovery-запросы (ChatGPT/Bing gap)
+    try:
+        topics = json.load(open(Path(__file__).parent / "topics.json"))["topics"]
+        for tp in topics:
+            urls.append(render_topic(tp))
+    except FileNotFoundError:
+        pass
     # sitemap
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
