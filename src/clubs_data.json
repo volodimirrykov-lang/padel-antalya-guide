@@ -2,7 +2,7 @@
   "_meta": {
     "purpose": "Source of truth для padelantalya.org. Меняешь факт ЗДЕСЬ → перегенерируешь все языковые страницы build.py. Клубы — только verified (WebSearch/registry V7).",
     "updated": "2026-06-01",
-    "verified_note": "V7 — из registry.json (Оля 29-30.05). Lara — WebSearch IG+Yandex 31.05. Mediterra — производитель, не клуб."
+    "verified_note": "V7 — из registry.json (Оля 29-30.05). Lara — WebSearch IG+Yandex 31.05. Mediterra — производитель, не клуб. Camp D — удалён 01.06 по решению Володимира."
   },
   "clubs": [
     {
@@ -32,21 +32,6 @@
       "booking": "BallBall app",
       "instagram": "larapadel_club",
       "website": "",
-      "price": "",
-      "lat": null, "lng": null
-    },
-    {
-      "name": "Camp D Padel",
-      "primary": false,
-      "area": "Döşemealtı",
-      "type": "Outdoor",
-      "address": "Altınkale, 4554 Sk. No: 10, Döşemealtı, Antalya",
-      "courts": "4 outdoor panoramic",
-      "hours": "09:00–00:00 daily",
-      "phone": "",
-      "booking": "Matchpoint app / BalleJaune",
-      "instagram": "campdpadel",
-      "website": "https://campdpadel-tur.matchpoint.com.es",
       "price": "",
       "lat": null, "lng": null
     }
