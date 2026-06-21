@@ -15,7 +15,7 @@ DOCS = ROOT / "docs"
 DATA = json.load(open(Path(__file__).parent / "clubs_data.json"))
 CLUBS = DATA["clubs"]
 MFR = DATA["manufacturer_note"]
-DATE = "2026-06-01"
+DATE = "2026-06-21"
 
 # Languages: code -> (html lang, dir path '' for root, native name)
 LANGS = [
