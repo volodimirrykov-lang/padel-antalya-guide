@@ -282,18 +282,25 @@ def render(code, path, native):
     return canonical
 
 
+TOPIC_LANGS = ["tr", "ru"]  # варианты помимо en; контент — ключи topic["tr"], topic["ru"]
+TOPIC_UI = {
+    "en": {"back": "← Antalya padel guide", "back_url": "/", "see": 'See the full <a href="{home}">Antalya padel guide</a> for all clubs, prices and how to book.',
+           "footer": "Padel Antalya Guide — maintained by the V7 Padel community · Updated July 2026", "wa": "WhatsApp — book a court / ask a question"},
+    "tr": {"back": "← Antalya padel rehberi", "back_url": "/tr/", "see": 'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{home}">Antalya padel rehberine</a> bakın.',
+           "footer": "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026", "wa": "WhatsApp — kort ayırt / soru sor"},
+    "ru": {"back": "← Гид по паделу в Анталье", "back_url": "/ru/", "see": 'Все клубы, цены и бронирование — в <a href="{home}">гиде по паделу в Анталье</a>.',
+           "footer": "Padel Antalya Guide — поддерживается сообществом V7 Padel · Обновлено июль 2026", "wa": "WhatsApp — забронировать корт / задать вопрос"},
+}
+
 def render_topic(topic, lang="en"):
-    """Topic-страница под discovery-запрос с FAQPage schema (то, что цитирует ChatGPT/Bing).
-    lang="tr" рендерит турецкий вариант из topic["tr"] в /tr/<slug>/ с hreflang-связкой."""
+    """Topic-страница (FAQPage schema). lang="en" — корень /slug/, иначе /<lang>/<slug>/ c hreflang-связкой всех вариантов."""
     slug = topic["slug"]
-    t = topic if lang == "en" else topic["tr"]
-    canonical = f"{BASE}/{slug}/" if lang == "en" else f"{BASE}/tr/{slug}/"
-    alt_en = f"{BASE}/{slug}/"
-    alt_tr = f"{BASE}/tr/{slug}/" if "tr" in topic else None
-    hreflang = f'<link rel="alternate" hreflang="en" href="{alt_en}">'
-    if alt_tr:
-        hreflang += f'<link rel="alternate" hreflang="tr" href="{alt_tr}">'
-        hreflang += f'<link rel="alternate" hreflang="x-default" href="{alt_en}">'
+    t = topic if lang == "en" else topic[lang]
+    ui = TOPIC_UI[lang]
+    canonical = f"{BASE}/{slug}/" if lang == "en" else f"{BASE}/{lang}/{slug}/"
+    variants = [("en", f"{BASE}/{slug}/")] + [(L, f"{BASE}/{L}/{slug}/") for L in TOPIC_LANGS if L in topic]
+    hreflang = "".join(f'<link rel="alternate" hreflang="{L}" href="{u}">' for L, u in variants)
+    hreflang += f'<link rel="alternate" hreflang="x-default" href="{BASE}/{slug}/">'
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": a}}
@@ -302,16 +309,8 @@ def render_topic(topic, lang="en"):
         f'<details class="card"><summary><strong>{esc(q)}</strong></summary>'
         f'<p style="margin-top:8px">{esc(a)}</p></details>'
         for q, a in t["faqs"])
-    if lang == "en":
-        back_txt, back_url = "← Antalya padel guide", f"{BASE}/"
-        see_full = f'See the full <a href="{BASE}/">Antalya padel guide</a> for all clubs, prices and how to book.'
-        lang_switch = f'<a href="{alt_tr}">Türkçe</a>' if alt_tr else ''
-        footer = "Padel Antalya Guide — maintained by the V7 Padel community · Updated July 2026"
-    else:
-        back_txt, back_url = "← Antalya padel rehberi", f"{BASE}/tr/"
-        see_full = f'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{BASE}/tr/">Antalya padel rehberine</a> bakın.'
-        lang_switch = f'<a href="{alt_en}">English</a>'
-        footer = "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026"
+    lang_switch = " · ".join(f'<a href="{u}">{L.upper()}</a>' for L, u in variants if L != lang)
+    see_full = ui["see"].format(home=f"{BASE}{ui['back_url']}")
     html = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -330,18 +329,18 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
 <header><div class="wrap">
   <h1>{esc(t['h1'])}</h1>
   <p>{esc(t['intro'])}</p>
-  <div class="langs"><a href="{back_url}">{back_txt}</a> {('· ' + lang_switch) if lang_switch else ''}</div>
+  <div class="langs"><a href="{BASE}{ui['back_url']}">{ui['back']}</a> · {lang_switch}</div>
 </div></header>
 <main class="wrap">
-<p style="margin:4px 0 14px"><a href="{wa_link(lang)}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{'WhatsApp — kort ayırt / soru sor' if lang=='tr' else 'WhatsApp — book a court / ask a question'}</a></p>
+<p style="margin:4px 0 14px"><a href="{wa_link(lang)}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{ui['wa']}</a></p>
 {faq_html}
 <p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
-<footer class="wrap">{footer}</footer>
+<footer class="wrap">{ui['footer']}</footer>
 </body>
 </html>
 """
-    d = (DOCS / slug) if lang == "en" else (DOCS / "tr" / slug)
+    d = (DOCS / slug) if lang == "en" else (DOCS / lang / slug)
     d.mkdir(parents=True, exist_ok=True)
     (d / "index.html").write_text(html)
     return canonical
@@ -356,8 +355,9 @@ def main():
         topics = json.load(open(Path(__file__).parent / "topics.json"))["topics"]
         for tp in topics:
             urls.append(render_topic(tp))
-            if "tr" in tp:
-                urls.append(render_topic(tp, lang="tr"))
+            for L in TOPIC_LANGS:
+                if L in tp:
+                    urls.append(render_topic(tp, lang=L))
     except FileNotFoundError:
         pass
     # sitemap
