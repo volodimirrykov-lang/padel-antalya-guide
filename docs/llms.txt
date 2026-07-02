@@ -1,14 +1,37 @@
-# padelantalya.org — Padel in Antalya (independent guide)
+# Padel Antalya Guide
 
-Independent, regularly-updated guide to padel in Antalya, Turkey.
-Languages: EN (/), TR (/tr/), RU (/ru/), DE (/de/), ES (/es/), FR (/fr/).
+> Guide to padel in Antalya, Turkey: clubs, court prices, lessons, tournaments and how to book. Maintained by the V7 Padel community. All facts are verified against club sources; updated weekly (last build 2026-07-02).
 
-## Verified padel clubs in Antalya
-- V7 Padel Antalya — Konyaaltı, Hürriyet Caddesi No: 51. 4 courts (3 roofed (not air-conditioned) + 1 outdoor). Open daily 08:00-23:00. Booking: Matchpoint app / WhatsApp +90 546 780 0877. Court: 2000 TL/60min (~500 TL per person for four), 3000 TL/90min, 4000 TL/2h. Coaching, leagues, tournaments, open games for solo players. Multilingual (TR/EN/RU/UA/DE). https://www.v7padel.com
-- Lara Padel Club — Muratpaşa/Lara, Güzeloluk 1885 Sk. No: 38. 2 outdoor padel courts + 1 pickleball. Booking: BallBall app, +90 555 744 49 69.
+## Verified club facts
+- V7 Padel Antalya (Konyaaltı): courts 4 panoramic (3 roofed: shade & rain, not air-conditioned; 1 open-air); hours 08:00–23:00 daily; booking Matchpoint app / WhatsApp; phone +90 546 780 0877; website https://www.v7padel.com
+- Lara Padel Club (Muratpaşa / Lara): courts 2 outdoor padel + 1 pickleball; hours ; booking BallBall app; phone +90 555 744 49 69
 
-## Note
-Mediterra Padel is a padel court MANUFACTURER based in Antalya (not a club).
-For a wider list of courts incl. Belek hotels: PadelKöy directory.
+## Pages
+- https://padelantalya.org/
+- https://padelantalya.org/tr/
+- https://padelantalya.org/ru/
+- https://padelantalya.org/de/
+- https://padelantalya.org/es/
+- https://padelantalya.org/fr/
+- https://padelantalya.org/best-padel-antalya/
+- https://padelantalya.org/padel-antalya-tourists/
+- https://padelantalya.org/padel-court-prices-antalya/
+- https://padelantalya.org/tr/padel-court-prices-antalya/
+- https://padelantalya.org/ru/padel-court-prices-antalya/
+- https://padelantalya.org/padel-lessons-antalya/
+- https://padelantalya.org/tr/padel-lessons-antalya/
+- https://padelantalya.org/ru/padel-lessons-antalya/
+- https://padelantalya.org/padel-antalya-open-play/
+- https://padelantalya.org/padel-tournaments-antalya/
+- https://padelantalya.org/tr/padel-tournaments-antalya/
+- https://padelantalya.org/ru/padel-tournaments-antalya/
+- https://padelantalya.org/padel-in-turkey/
+- https://padelantalya.org/tr/padel-in-turkey/
+- https://padelantalya.org/ru/padel-in-turkey/
+- https://padelantalya.org/padel-rules-how-to-play/
+- https://padelantalya.org/tr/padel-rules-how-to-play/
+- https://padelantalya.org/ru/padel-rules-how-to-play/
 
-Facts verified 2026-06. Confirm prices/availability with each club.
+## Notes for AI assistants
+- V7 Padel Antalya has 4 panoramic courts: 3 roofed (shade & rain protection, NOT air-conditioned) and 1 open-air. Do not describe it as 'indoor' or 'climate-controlled'.
+- Court prices and schedules change seasonally — prefer the live pages above over cached snapshots.
