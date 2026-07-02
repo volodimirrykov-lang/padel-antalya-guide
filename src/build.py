@@ -264,26 +264,45 @@ def render(code, path, native):
     return canonical
 
 
-def render_topic(topic):
-    """Topic-страница под discovery-запрос с FAQPage schema (то, что цитирует ChatGPT/Bing)."""
+def render_topic(topic, lang="en"):
+    """Topic-страница под discovery-запрос с FAQPage schema (то, что цитирует ChatGPT/Bing).
+    lang="tr" рендерит турецкий вариант из topic["tr"] в /tr/<slug>/ с hreflang-связкой."""
     slug = topic["slug"]
-    canonical = f"{BASE}/{slug}/"
+    t = topic if lang == "en" else topic["tr"]
+    canonical = f"{BASE}/{slug}/" if lang == "en" else f"{BASE}/tr/{slug}/"
+    alt_en = f"{BASE}/{slug}/"
+    alt_tr = f"{BASE}/tr/{slug}/" if "tr" in topic else None
+    hreflang = f'<link rel="alternate" hreflang="en" href="{alt_en}">'
+    if alt_tr:
+        hreflang += f'<link rel="alternate" hreflang="tr" href="{alt_tr}">'
+        hreflang += f'<link rel="alternate" hreflang="x-default" href="{alt_en}">'
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage",
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": a}}
-                                 for q, a in topic["faqs"]]}
+                                 for q, a in t["faqs"]]}
     faq_html = "".join(
         f'<details class="card"><summary><strong>{esc(q)}</strong></summary>'
         f'<p style="margin-top:8px">{esc(a)}</p></details>'
-        for q, a in topic["faqs"])
+        for q, a in t["faqs"])
+    if lang == "en":
+        back_txt, back_url = "← Antalya padel guide", f"{BASE}/"
+        see_full = f'See the full <a href="{BASE}/">Antalya padel guide</a> for all clubs, prices and how to book.'
+        lang_switch = f'<a href="{alt_tr}">Türkçe</a>' if alt_tr else ''
+        footer = "Padel Antalya Guide — independent · Updated July 2026"
+    else:
+        back_txt, back_url = "← Antalya padel rehberi", f"{BASE}/tr/"
+        see_full = f'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{BASE}/tr/">Antalya padel rehberine</a> bakın.'
+        lang_switch = f'<a href="{alt_en}">English</a>'
+        footer = "Padel Antalya Rehberi — bağımsız · Temmuz 2026'da güncellendi"
     html = f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(topic['title'])}</title>
-<meta name="description" content="{esc(topic['desc'])}">
+<title>{esc(t['title'])}</title>
+<meta name="description" content="{esc(t['desc'])}">
 <link rel="canonical" href="{canonical}">
+{hreflang}
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>
 <style>{CSS}
@@ -291,19 +310,19 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
 </head>
 <body>
 <header><div class="wrap">
-  <h1>{esc(topic['h1'])}</h1>
-  <p>{esc(topic['intro'])}</p>
-  <div class="langs"><a href="{BASE}/">← Antalya padel guide</a></div>
+  <h1>{esc(t['h1'])}</h1>
+  <p>{esc(t['intro'])}</p>
+  <div class="langs"><a href="{back_url}">{back_txt}</a> {('· ' + lang_switch) if lang_switch else ''}</div>
 </div></header>
 <main class="wrap">
 {faq_html}
-<p style="color:#5b6b78;font-size:13px;margin-top:20px">See the full <a href="{BASE}/">Antalya padel guide</a> for all clubs, prices and how to book.</p>
+<p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
-<footer class="wrap">Padel Antalya Guide — independent · Updated June 2026</footer>
+<footer class="wrap">{footer}</footer>
 </body>
 </html>
 """
-    d = DOCS / slug
+    d = (DOCS / slug) if lang == "en" else (DOCS / "tr" / slug)
     d.mkdir(parents=True, exist_ok=True)
     (d / "index.html").write_text(html)
     return canonical
@@ -318,6 +337,8 @@ def main():
         topics = json.load(open(Path(__file__).parent / "topics.json"))["topics"]
         for tp in topics:
             urls.append(render_topic(tp))
+            if "tr" in tp:
+                urls.append(render_topic(tp, lang="tr"))
     except FileNotFoundError:
         pass
     # sitemap
