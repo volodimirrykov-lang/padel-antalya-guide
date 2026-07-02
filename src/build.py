@@ -33,7 +33,7 @@ T = {
         "title": "Padel in Antalya — Clubs, Courts, Prices & How to Play (2026 Guide)",
         "desc": "Independent guide to padel in Antalya, Turkey: clubs in Konyaaltı and Lara, court prices, booking without a partner, coaching and tournaments.",
         "h1": "Padel in Antalya — Clubs, Courts & How to Play",
-        "intro": "An independent, regularly-updated guide to playing padel in Antalya, Turkey: where the courts are, what it costs, and how to get on court even without a partner.",
+        "intro": "A regularly-updated guide to playing padel in Antalya, Turkey: where the courts are, what it costs, and how to get on court even without a partner.",
         "where": "Where to play padel in Antalya",
         "where_txt": "Padel courts in Antalya are concentrated in three areas: <strong>Konyaaltı</strong> (west, near the coast), <strong>Muratpaşa / Lara</strong> (city centre and east) and the <strong>Belek</strong> resort belt. Below are the dedicated clubs we can verify.",
         "cost": "How much does it cost?",
@@ -44,13 +44,13 @@ T = {
         "mfr_txt": "Many courts in Antalya and beyond are built locally. <a href='{url}' rel='nofollow'>{name}</a> is an Antalya-based padel court <strong>manufacturer</strong> (not a club): they design, produce and install courts for clubs and resorts worldwide.",
         "other": "For a wider list of courts (including Belek hotels), directory sites such as <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> are a good reference.",
         "lbl": {"area": "Area", "courts": "Courts", "hours": "Hours", "booking": "Booking", "phone": "Phone", "price": "Price", "links": "Links"},
-        "footer": "Independent information resource · Updated June 2026 · We list only verified, publicly-open padel clubs.",
+        "footer": "Maintained by the V7 Padel community · Updated July 2026 · We list only verified, publicly-open padel clubs.",
     },
     "tr": {
         "title": "Antalya'da Padel — Kulüpler, Kortlar, Fiyatlar (2026 Rehberi)",
         "desc": "Antalya'da padel için bağımsız rehber: Konyaaltı ve Lara'daki kulüpler, kort fiyatları, partnersiz rezervasyon, antrenörlük ve turnuvalar.",
         "h1": "Antalya'da Padel — Kulüpler, Kortlar ve Nasıl Oynanır",
-        "intro": "Antalya'da padel oynamak için bağımsız, düzenli güncellenen rehber: kortlar nerede, ne kadar ve partneriniz olmadan bile nasıl oynanır.",
+        "intro": "Antalya'da padel oynamak için düzenli güncellenen rehber: kortlar nerede, ne kadar ve partneriniz olmadan bile nasıl oynanır.",
         "where": "Antalya'da padel nerede oynanır",
         "where_txt": "Antalya'da padel kortları üç bölgede yoğunlaşır: <strong>Konyaaltı</strong> (batı, sahile yakın), <strong>Muratpaşa / Lara</strong> (merkez ve doğu) ve <strong>Belek</strong> otel bölgesi. Aşağıda doğruladığımız kulüpler var.",
         "cost": "Ne kadar?",
@@ -61,13 +61,13 @@ T = {
         "mfr_txt": "Antalya'daki ve dünyadaki birçok kort yerel olarak üretilir. <a href='{url}' rel='nofollow'>{name}</a> Antalya merkezli bir padel kort <strong>üreticisidir</strong> (kulüp değil): dünya çapında kulüpler ve tesisler için kort tasarlar, üretir ve kurar.",
         "other": "Daha geniş kort listesi için (Belek otelleri dahil) <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> gibi rehberlere bakabilirsiniz.",
         "lbl": {"area": "Bölge", "courts": "Kortlar", "hours": "Saatler", "booking": "Rezervasyon", "phone": "Telefon", "price": "Fiyat", "links": "Bağlantılar"},
-        "footer": "Bağımsız bilgi kaynağı · Haziran 2026 güncellendi · Yalnızca doğrulanmış, halka açık kulüpleri listeliyoruz.",
+        "footer": "V7 Padel topluluğu tarafından güncellenir · Temmuz 2026 · Yalnızca doğrulanmış, halka açık kulüpleri listeliyoruz.",
     },
     "ru": {
         "title": "Падел в Анталье — клубы, корты, цены (гид 2026)",
         "desc": "Независимый гид по паделу в Анталье: клубы в Коньяалты и Ларе, цены на корты, бронь без пары, тренировки и турниры.",
         "h1": "Падел в Анталье — клубы, корты и как играть",
-        "intro": "Независимый, регулярно обновляемый гид по паделу в Анталье: где корты, сколько стоит и как выйти на корт даже без пары.",
+        "intro": "Регулярно обновляемый гид по паделу в Анталье: где корты, сколько стоит и как выйти на корт даже без пары.",
         "where": "Где играть в падел в Анталье",
         "where_txt": "Корты в Анталье сосредоточены в трёх районах: <strong>Коньяалты</strong> (запад, у моря), <strong>Муратпаша / Лара</strong> (центр и восток) и курортная зона <strong>Белек</strong>. Ниже — клубы, которые мы проверили.",
         "cost": "Сколько стоит?",
@@ -78,13 +78,13 @@ T = {
         "mfr_txt": "Многие корты в Анталье и за её пределами производятся локально. <a href='{url}' rel='nofollow'>{name}</a> — это анталийский <strong>производитель</strong> падел-кортов (не клуб): проектирует, производит и устанавливает корты для клубов и курортов по всему миру.",
         "other": "Более широкий список кортов (включая отели Белека) — в каталогах вроде <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Район", "courts": "Корты", "hours": "Часы", "booking": "Бронь", "phone": "Телефон", "price": "Цена", "links": "Ссылки"},
-        "footer": "Независимый информационный ресурс · Обновлено июнь 2026 · Только проверенные публичные клубы.",
+        "footer": "Поддерживается сообществом V7 Padel · Обновлено июль 2026 · Только проверенные публичные клубы.",
     },
     "de": {
         "title": "Padel in Antalya — Clubs, Plätze, Preise (Guide 2026)",
         "desc": "Unabhängiger Guide für Padel in Antalya: Clubs in Konyaaltı und Lara, Platzpreise, Buchung ohne Partner, Training und Turniere.",
         "h1": "Padel in Antalya — Clubs, Plätze & wie man spielt",
-        "intro": "Ein unabhängiger, regelmäßig aktualisierter Guide für Padel in Antalya: wo die Plätze sind, was es kostet und wie man auch ohne Partner spielt.",
+        "intro": "Ein regelmäßig aktualisierter Guide für Padel in Antalya: wo die Plätze sind, was es kostet und wie man auch ohne Partner spielt.",
         "where": "Wo man in Antalya Padel spielt",
         "where_txt": "Padelplätze in Antalya konzentrieren sich auf drei Gebiete: <strong>Konyaaltı</strong> (Westen, küstennah), <strong>Muratpaşa / Lara</strong> (Zentrum und Osten) und die Hotelregion <strong>Belek</strong>. Unten die von uns verifizierten Clubs.",
         "cost": "Was kostet es?",
@@ -95,13 +95,13 @@ T = {
         "mfr_txt": "Viele Plätze in Antalya und weltweit werden lokal gebaut. <a href='{url}' rel='nofollow'>{name}</a> ist ein in Antalya ansässiger Padelplatz-<strong>Hersteller</strong> (kein Club): entwirft, produziert und installiert Plätze für Clubs und Resorts weltweit.",
         "other": "Eine größere Platzliste (inkl. Belek-Hotels) bieten Verzeichnisse wie <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Gebiet", "courts": "Plätze", "hours": "Zeiten", "booking": "Buchung", "phone": "Telefon", "price": "Preis", "links": "Links"},
-        "footer": "Unabhängige Informationsquelle · Aktualisiert Juni 2026 · Nur verifizierte, öffentliche Clubs.",
+        "footer": "Gepflegt von der V7 Padel Community · Aktualisiert Juli 2026 · Nur verifizierte, öffentliche Clubs.",
     },
     "es": {
         "title": "Pádel en Antalya — clubes, pistas, precios (guía 2026)",
         "desc": "Guía independiente del pádel en Antalya: clubes en Konyaaltı y Lara, precios de pista, reserva sin pareja, clases y torneos.",
         "h1": "Pádel en Antalya — clubes, pistas y cómo jugar",
-        "intro": "Una guía independiente y actualizada del pádel en Antalya: dónde están las pistas, cuánto cuesta y cómo jugar incluso sin pareja.",
+        "intro": "Una guía actualizada del pádel en Antalya: dónde están las pistas, cuánto cuesta y cómo jugar incluso sin pareja.",
         "where": "Dónde jugar al pádel en Antalya",
         "where_txt": "Las pistas en Antalya se concentran en tres zonas: <strong>Konyaaltı</strong> (oeste, junto a la costa), <strong>Muratpaşa / Lara</strong> (centro y este) y la franja hotelera de <strong>Belek</strong>. Abajo, los clubes que hemos verificado.",
         "cost": "¿Cuánto cuesta?",
@@ -112,13 +112,13 @@ T = {
         "mfr_txt": "Muchas pistas en Antalya y el mundo se fabrican localmente. <a href='{url}' rel='nofollow'>{name}</a> es un <strong>fabricante</strong> de pistas de pádel con sede en Antalya (no un club): diseña, produce e instala pistas para clubes y resorts en todo el mundo.",
         "other": "Para una lista más amplia de pistas (incluidos hoteles de Belek), directorios como <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> son una buena referencia.",
         "lbl": {"area": "Zona", "courts": "Pistas", "hours": "Horario", "booking": "Reserva", "phone": "Teléfono", "price": "Precio", "links": "Enlaces"},
-        "footer": "Recurso de información independiente · Actualizado junio 2026 · Solo clubes verificados y abiertos al público.",
+        "footer": "Mantenida por la comunidad V7 Padel · Actualizado julio 2026 · Solo clubes verificados y abiertos al público.",
     },
     "fr": {
         "title": "Padel à Antalya — clubs, terrains, prix (guide 2026)",
         "desc": "Guide indépendant du padel à Antalya : clubs à Konyaaltı et Lara, prix des terrains, réservation sans partenaire, cours et tournois.",
         "h1": "Padel à Antalya — clubs, terrains et comment jouer",
-        "intro": "Un guide indépendant et régulièrement mis à jour du padel à Antalya : où sont les terrains, combien ça coûte et comment jouer même sans partenaire.",
+        "intro": "Un guide régulièrement mis à jour du padel à Antalya : où sont les terrains, combien ça coûte et comment jouer même sans partenaire.",
         "where": "Où jouer au padel à Antalya",
         "where_txt": "Les terrains à Antalya se concentrent dans trois zones : <strong>Konyaaltı</strong> (ouest, près de la côte), <strong>Muratpaşa / Lara</strong> (centre et est) et la zone hôtelière de <strong>Belek</strong>. Ci-dessous, les clubs que nous avons vérifiés.",
         "cost": "Combien ça coûte ?",
@@ -129,7 +129,7 @@ T = {
         "mfr_txt": "Beaucoup de terrains à Antalya et ailleurs sont fabriqués localement. <a href='{url}' rel='nofollow'>{name}</a> est un <strong>fabricant</strong> de terrains de padel basé à Antalya (pas un club) : il conçoit, produit et installe des terrains pour des clubs et resorts dans le monde entier.",
         "other": "Pour une liste plus large de terrains (y compris les hôtels de Belek), des annuaires comme <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> sont une bonne référence.",
         "lbl": {"area": "Zone", "courts": "Terrains", "hours": "Horaires", "booking": "Réservation", "phone": "Téléphone", "price": "Prix", "links": "Liens"},
-        "footer": "Ressource d'information indépendante · Mise à jour juin 2026 · Uniquement des clubs vérifiés et ouverts au public.",
+        "footer": "Maintenu par la communauté V7 Padel · Mise à jour juillet 2026 · Uniquement des clubs vérifiés et ouverts au public.",
     },
 }
 
@@ -306,12 +306,12 @@ def render_topic(topic, lang="en"):
         back_txt, back_url = "← Antalya padel guide", f"{BASE}/"
         see_full = f'See the full <a href="{BASE}/">Antalya padel guide</a> for all clubs, prices and how to book.'
         lang_switch = f'<a href="{alt_tr}">Türkçe</a>' if alt_tr else ''
-        footer = "Padel Antalya Guide — independent · Updated July 2026"
+        footer = "Padel Antalya Guide — maintained by the V7 Padel community · Updated July 2026"
     else:
         back_txt, back_url = "← Antalya padel rehberi", f"{BASE}/tr/"
         see_full = f'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{BASE}/tr/">Antalya padel rehberine</a> bakın.'
         lang_switch = f'<a href="{alt_en}">English</a>'
-        footer = "Padel Antalya Rehberi — bağımsız · Temmuz 2026'da güncellendi"
+        footer = "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026"
     html = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
