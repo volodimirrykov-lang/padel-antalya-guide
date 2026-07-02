@@ -160,12 +160,30 @@ def lang_switcher(cur_code):
     return " · ".join(links)
 
 
-def club_card(club, t):
+
+# Pre-filled WhatsApp (конверсия из гида + операторы видят источник лида)
+WA_PHONE = "905467800877"
+WA_TEXTS = {
+    "en": "Hi! I found you via the PadelAntalya guide — I'd like to book a court / join a game.",
+    "tr": "Merhaba! PadelAntalya rehberinden ulaştım — kort rezervasyonu / oyuna katılım hakkında bilgi almak istiyorum.",
+    "ru": "Здравствуйте! Нашёл вас через гид PadelAntalya — хочу забронировать корт / присоединиться к игре.",
+    "de": "Hallo! Ich habe Sie über den PadelAntalya-Guide gefunden — ich möchte einen Platz buchen.",
+    "es": "¡Hola! Los encontré por la guía PadelAntalya — quiero reservar una pista.",
+    "fr": "Bonjour ! Je vous ai trouvés via le guide PadelAntalya — je voudrais réserver un terrain.",
+}
+def wa_link(lang):
+    import urllib.parse
+    txt = WA_TEXTS.get(lang, WA_TEXTS["en"])
+    return f"https://wa.me/{WA_PHONE}?text={urllib.parse.quote(txt)}"
+
+
+def club_card(club, t, lang="en"):
     L = t["lbl"]
     rows = [(L["area"], club["area"]), (L["courts"], club["courts"])]
     if club.get("hours"):
         rows.append((L["hours"], club["hours"]))
-    rows.append((L["booking"], club["booking"] + (f' · {club["phone"]}' if club.get("phone") else "")))
+    phone_html = f' · <a href="{wa_link(lang)}" rel="nofollow">WhatsApp {club["phone"]}</a>' if club.get("phone") else ""
+    rows.append((L["booking"], esc(club["booking"]) + phone_html))
     if club.get("price"):
         rows.append((L["price"], esc(club["price"])))
     links = []
@@ -215,7 +233,7 @@ a{color:#1f6feb}footer{border-top:1px solid #e3e9ef;color:#5b6b78;font-size:13px
 def render(code, path, native):
     t = T[code]
     price = CLUBS[0].get("price", "")
-    cards = "\n".join(club_card(c, t) for c in CLUBS)
+    cards = "\n".join(club_card(c, t, code) for c in CLUBS)
     canonical = BASE + "/" + (path + "/" if path else "")
     html = f"""<!DOCTYPE html>
 <html lang="{code}">
@@ -315,6 +333,7 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
   <div class="langs"><a href="{back_url}">{back_txt}</a> {('· ' + lang_switch) if lang_switch else ''}</div>
 </div></header>
 <main class="wrap">
+<p style="margin:4px 0 14px"><a href="{wa_link(lang)}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{'WhatsApp — kort ayırt / soru sor' if lang=='tr' else 'WhatsApp — book a court / ask a question'}</a></p>
 {faq_html}
 <p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
