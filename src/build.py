@@ -8,6 +8,7 @@
 Автор: CMO. Запуск: cd src && python3 build.py
 """
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -215,7 +216,14 @@ def schema_jsonld(t):
         if c.get("website"): node["url"] = c["website"]
         if c.get("instagram"): node["sameAs"] = [f"https://www.instagram.com/{c['instagram']}"]
         if c.get("lat"): node["geo"] = {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lng"]}
-        if c.get("hours"): node["openingHours"] = "Mo-Su 08:00-23:00"
+        if c.get("hours"):
+            # из clubs_data "07:00–00:00 daily" → schema "Mo-Su 07:00-00:00" (был хардкод 08-23)
+            hm = re.match(r"(\d{2}:\d{2})[–-](\d{2}:\d{2})", c["hours"])
+            if hm:
+                node["openingHours"] = f"Mo-Su {hm.group(1)}-{hm.group(2)}"
+        if c.get("primary"):
+            node["priceRange"] = "₺₺"
+            node["additionalType"] = "https://schema.org/SportsClub"
         items.append({"@type": "ListItem", "position": i, "item": node})
     article = {"@context": "https://schema.org", "@type": "Article", "headline": t["h1"],
                "about": "Padel in Antalya, Turkey", "inLanguage": [c for c, _, _ in LANGS],
