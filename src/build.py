@@ -27,6 +27,9 @@ LANGS = [
     ("de", "de", "Deutsch"),
     ("es", "es", "Español"),
     ("fr", "fr", "Français"),
+    # 12.07: языковые группы Володимира (туристы Антальи): + uk (UA #6 + ядро базы V7), + pl (PL #4)
+    ("uk", "uk", "Українська"),
+    ("pl", "pl", "Polski"),
 ]
 
 # UI strings per language
@@ -133,6 +136,40 @@ T = {
         "lbl": {"area": "Zone", "courts": "Terrains", "hours": "Horaires", "booking": "Réservation", "phone": "Téléphone", "price": "Prix", "links": "Liens"},
         "footer": "Maintenu par la communauté V7 Padel · Mise à jour juillet 2026 · Uniquement des clubs vérifiés et ouverts au public.",
     },
+    "uk": {
+        "title": "Падел в Анталії — клуби, корти, ціни (гід 2026)",
+        "desc": "Незалежний гід із паделу в Анталії: клуби в Коньяалти та Ларі, ціни на корти, бронь без пари, тренування та турніри.",
+        "h1": "Падел в Анталії — клуби, корти та як грати",
+        "intro": "Регулярно оновлюваний гід із паделу в Анталії: де корти, скільки коштує і як вийти на корт навіть без пари.",
+        "where": "Де грати в падел в Анталії",
+        "where_txt": "Корти в Анталії зосереджені у трьох районах: <strong>Коньяалти</strong> (захід, біля моря), <strong>Муратпаша / Лара</strong> (центр і схід) та курортна зона <strong>Белек</strong>. Нижче — клуби, які ми перевірили.",
+        "cost": "Скільки коштує?",
+        "cost_txt": "Ціни залежать від клубу, часу та сезону. Для прикладу, у V7 Padel Antalya — <strong>{price}</strong>. В інших клубах уточнюйте.",
+        "solo": "Гра без пари",
+        "solo_txt": "Не потрібно приводити трьох друзів. У ком'юніті-клубах є відкриті ігри та міксери, де одиночних гравців підбирають у гру за рівнем. Напишіть клубу через застосунок або WhatsApp і попросіться на відкриту сесію.",
+        "mfr": "Хто будує корти",
+        "mfr_txt": "Багато кортів в Анталії та за її межами виробляються локально. <a href='{url}' rel='nofollow'>{name}</a> — це анталійський <strong>виробник</strong> падел-кортів (не клуб): проєктує, виробляє та встановлює корти для клубів і курортів по всьому світу.",
+        "other": "Ширший список кортів (включно з готелями Белека) — у каталогах на кшталт <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
+        "lbl": {"area": "Район", "courts": "Корти", "hours": "Години", "booking": "Бронь", "phone": "Телефон", "price": "Ціна", "links": "Посилання"},
+        "footer": "Підтримується спільнотою V7 Padel · Оновлено липень 2026 · Лише перевірені публічні клуби.",
+    },
+    "pl": {
+        "title": "Padel w Antalyi — kluby, korty, ceny (przewodnik 2026)",
+        "desc": "Niezależny przewodnik po padlu w Antalyi: kluby w Konyaaltı i Larze, ceny kortów, rezerwacja bez partnera, treningi i turnieje.",
+        "h1": "Padel w Antalyi — kluby, korty i jak grać",
+        "intro": "Regularnie aktualizowany przewodnik po padlu w Antalyi: gdzie są korty, ile to kosztuje i jak zagrać nawet bez partnera.",
+        "where": "Gdzie grać w padla w Antalyi",
+        "where_txt": "Korty w Antalyi skupiają się w trzech rejonach: <strong>Konyaaltı</strong> (zachód, przy morzu), <strong>Muratpaşa / Lara</strong> (centrum i wschód) oraz strefa hotelowa <strong>Belek</strong>. Poniżej kluby, które zweryfikowaliśmy.",
+        "cost": "Ile to kosztuje?",
+        "cost_txt": "Ceny zależą od klubu, pory i sezonu. Dla przykładu, w V7 Padel Antalya — <strong>{price}</strong>. W innych klubach pytaj bezpośrednio.",
+        "solo": "Gra bez partnera",
+        "solo_txt": "Nie musisz przyprowadzać trzech znajomych. Kluby społecznościowe organizują otwarte gry i miksery, gdzie pojedynczy gracze są dobierani do gry według poziomu. Napisz do klubu przez aplikację lub WhatsApp i poproś o dołączenie do otwartej sesji.",
+        "mfr": "Kto buduje korty",
+        "mfr_txt": "Wiele kortów w Antalyi i poza nią powstaje lokalnie. <a href='{url}' rel='nofollow'>{name}</a> to antalyjski <strong>producent</strong> kortów do padla (nie klub): projektuje, produkuje i instaluje korty dla klubów i kurortów na całym świecie.",
+        "other": "Szersza lista kortów (w tym hotele w Belek) — w katalogach takich jak <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
+        "lbl": {"area": "Rejon", "courts": "Korty", "hours": "Godziny", "booking": "Rezerwacja", "phone": "Telefon", "price": "Cena", "links": "Linki"},
+        "footer": "Prowadzony przez społeczność V7 Padel · Aktualizacja lipiec 2026 · Tylko zweryfikowane, publiczne kluby.",
+    },
 }
 
 BASE = "https://padelantalya.org"
@@ -172,6 +209,8 @@ WA_TEXTS = {
     "de": "Hallo! Ich habe Sie über den PadelAntalya-Guide gefunden — ich möchte einen Platz buchen.",
     "es": "¡Hola! Los encontré por la guía PadelAntalya — quiero reservar una pista.",
     "fr": "Bonjour ! Je vous ai trouvés via le guide PadelAntalya — je voudrais réserver un terrain.",
+    "uk": "Вітаю! Знайшов вас через гід PadelAntalya — хочу забронювати корт / приєднатися до гри.",
+    "pl": "Dzień dobry! Znalazłem was przez przewodnik PadelAntalya — chcę zarezerwować kort / dołączyć do gry.",
 }
 def wa_link(lang, code="HUB-GUIDE"):
     """CTA WhatsApp. code = intake-код атрибуции (wazzup_intake ловит [CODE] в первом
