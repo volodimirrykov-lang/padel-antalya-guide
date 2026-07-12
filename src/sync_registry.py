@@ -29,10 +29,14 @@ def set_field(key, value):
 # телефон / адрес / часы
 set_field("phone", club["contacts"]["phone"])
 set_field("address", club["identity"]["address"])
-hours = club.get("sales", {}).get("hours") or "08:00-23:00"
-# формат сателлита: "08:00–23:00 daily"
-if "08:00" in str(hours):
-    set_field("hours", "08:00–23:00 daily")
+# 12.07: канон часов = facility.hours (Olya 07.07: 07:00-00:00), НЕ sales.hours —
+# старый код с fallback "08:00" молча держал сателлит на протухших часах
+hours = club.get("facility", {}).get("hours") or club.get("sales", {}).get("hours") or ""
+m = __import__("re").match(r"(\d{2}:\d{2})-(\d{2}:\d{2})", str(hours))
+if m:
+    set_field("hours", f"{m.group(1)}–{m.group(2)} daily")
+else:
+    print(f"WARN: facility.hours нераспознан ({hours!r}) — hours не синкнут", file=sys.stderr)
 
 # цена из pricing_TRY
 p = club["pricing_TRY"]

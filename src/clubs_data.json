@@ -1,44 +1,46 @@
 {
-  "_meta": {
-    "purpose": "Source of truth для padelantalya.org. Меняешь факт ЗДЕСЬ → перегенерируешь все языковые страницы build.py. Клубы — только verified (WebSearch/registry V7).",
-    "updated": "2026-06-01",
-    "verified_note": "V7 — из registry.json (Оля 29-30.05). Lara — WebSearch IG+Yandex 31.05. Mediterra — производитель, не клуб. Camp D — удалён 01.06 по решению Володимира."
+ "_meta": {
+  "purpose": "Source of truth для padelantalya.org. Меняешь факт ЗДЕСЬ → перегенерируешь все языковые страницы build.py. Клубы — только verified (WebSearch/registry V7).",
+  "updated": "2026-06-01",
+  "verified_note": "V7 — из registry.json (Оля 29-30.05). Lara — WebSearch IG+Yandex 31.05. Mediterra — производитель, не клуб. Camp D — удалён 01.06 по решению Володимира."
+ },
+ "clubs": [
+  {
+   "name": "V7 Padel Antalya",
+   "primary": true,
+   "area": "Konyaaltı",
+   "type": "Roofed + Outdoor",
+   "address": "Hürriyet Caddesi No: 51, Konyaaltı, Antalya",
+   "courts": "4 panoramic (3 roofed: shade & rain, not air-conditioned; 1 open-air)",
+   "hours": "07:00–00:00 daily",
+   "phone": "+90 546 780 0877",
+   "booking": "Matchpoint app / WhatsApp",
+   "instagram": "v7padel_antalya",
+   "website": "https://www.v7padel.com",
+   "price": "2000 TL / 60 min (≈500 TL pp for four), 3000 TL / 90 min, 4000 TL / 2h",
+   "lat": 36.8763,
+   "lng": 30.6357
   },
-  "clubs": [
-    {
-      "name": "V7 Padel Antalya",
-      "primary": true,
-      "area": "Konyaaltı",
-      "type": "Roofed + Outdoor",
-      "address": "Hürriyet Caddesi No: 51, Konyaaltı, Antalya",
-      "courts": "4 panoramic (3 roofed: shade & rain, not air-conditioned; 1 open-air)",
-      "hours": "08:00–23:00 daily",
-      "phone": "+90 546 780 0877",
-      "booking": "Matchpoint app / WhatsApp",
-      "instagram": "v7padel_antalya",
-      "website": "https://www.v7padel.com",
-      "price": "2000 TL / 60 min (≈500 TL pp for four), 3000 TL / 90 min, 4000 TL / 2h",
-      "lat": 36.8763, "lng": 30.6357
-    },
-    {
-      "name": "Lara Padel Club",
-      "primary": false,
-      "area": "Muratpaşa / Lara",
-      "type": "Outdoor",
-      "address": "Güzeloluk, 1885 Sk. No: 38, Muratpaşa, Antalya",
-      "courts": "2 outdoor padel + 1 pickleball",
-      "hours": "",
-      "phone": "+90 555 744 49 69",
-      "booking": "BallBall app",
-      "instagram": "larapadel_club",
-      "website": "",
-      "price": "",
-      "lat": null, "lng": null
-    }
-  ],
-  "manufacturer_note": {
-    "name": "Mediterra Padel",
-    "url": "https://www.mediterrapadel.com/",
-    "what": "Antalya-based padel court manufacturer (not a club) — designs, produces and installs courts worldwide."
+  {
+   "name": "Lara Padel Club",
+   "primary": false,
+   "area": "Muratpaşa / Lara",
+   "type": "Outdoor",
+   "address": "Güzeloluk, 1885 Sk. No: 38, Muratpaşa, Antalya",
+   "courts": "2 outdoor padel + 1 pickleball",
+   "hours": "",
+   "phone": "+90 555 744 49 69",
+   "booking": "BallBall app",
+   "instagram": "larapadel_club",
+   "website": "",
+   "price": "",
+   "lat": null,
+   "lng": null
   }
+ ],
+ "manufacturer_note": {
+  "name": "Mediterra Padel",
+  "url": "https://www.mediterrapadel.com/",
+  "what": "Antalya-based padel court manufacturer (not a club) — designs, produces and installs courts worldwide."
+ }
 }

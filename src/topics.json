@@ -10,11 +10,11 @@
    "faqs": [
     [
      "Which is the best padel club in Antalya?",
-     "It depends on what you want. For an all-round premium club with roofed courts (shade from sun and rain, not air-conditioned) and an active community, V7 Padel Antalya in Konyaaltı stands out: 4 courts (3 roofed + 1 open-air), daily open games and tournaments, coaching for all levels, multilingual staff (TR/EN/RU/UA/DE), open 08:00–23:00. For the Lara/Muratpaşa side, Lara Padel Club offers 2 outdoor padel courts plus a pickleball court. Belek resort hotels also have courts for guests."
+     "It depends on what you want. For an all-round premium club with roofed courts (shade from sun and rain, not air-conditioned) and an active community, V7 Padel Antalya in Konyaaltı stands out: 4 courts (3 roofed + 1 open-air), daily open games and tournaments, coaching for all levels, multilingual staff (TR/EN/RU/UA/DE), open {hours_range}. For the Lara/Muratpaşa side, Lara Padel Club offers 2 outdoor padel courts plus a pickleball court. Belek resort hotels also have courts for guests."
     ],
     [
      "What is the best padel club in Konyaaltı?",
-     "V7 Padel Antalya on Hürriyet Caddesi is the main dedicated club in Konyaaltı, with 3 roofed courts (shade from sun and rain, not air-conditioned) plus 1 open-air, open daily 08:00–23:00 — good for meeting other players through open games."
+     "V7 Padel Antalya on Hürriyet Caddesi is the main dedicated club in Konyaaltı, with 3 roofed courts (shade from sun and rain, not air-conditioned) plus 1 open-air, open daily {hours_range} — good for meeting other players through open games."
     ],
     [
      "Where can I play padel in the Lara / Muratpaşa area?",
@@ -47,7 +47,7 @@
     ],
     [
      "Can I play padel in Antalya without a partner?",
-     "Yes. Community clubs such as V7 Padel run open games and mixers where solo players are matched into a game by level. Message the club through its app or WhatsApp (+90 546 780 0877) and ask to join an open session."
+     "Yes. Community clubs such as V7 Padel run open games and mixers where solo players are matched into a game by level. Message the club through its app or WhatsApp ({phone}) and ask to join an open session."
     ],
     [
      "How much does a padel court cost in Antalya?",
@@ -76,7 +76,7 @@
     ],
     [
      "Is there a padel membership in Antalya?",
-     "V7 Padel Antalya offers membership packages that reduce the per-session cost for regular players. Contact the club via WhatsApp (+90 546 780 0877) or the Matchpoint app for current membership options — packages change seasonally."
+     "V7 Padel Antalya offers membership packages that reduce the per-session cost for regular players. Contact the club via WhatsApp ({phone}) or the Matchpoint app for current membership options — packages change seasonally."
     ],
     [
      "Can I get a padel court for two people in Antalya?",
@@ -88,7 +88,7 @@
     ],
     [
      "How do I pay for a padel court in Antalya?",
-     "V7 Padel Antalya accepts payment via the Matchpoint app (card online) or at the club. Book through the app or WhatsApp (+90 546 780 0877) to reserve your slot."
+     "V7 Padel Antalya accepts payment via the Matchpoint app (card online) or at the club. Book through the app or WhatsApp ({phone}) to reserve your slot."
     ]
    ],
    "tr": {
@@ -107,7 +107,7 @@
      ],
      [
       "Antalya'da padel üyeliği var mı?",
-      "V7 Padel Antalya, düzenli oyuncular için seans maliyetini düşüren üyelik paketleri sunuyor. Güncel koşullar için kulübe WhatsApp'tan (+90 546 780 0877) ulaşın."
+      "V7 Padel Antalya, düzenli oyuncular için seans maliyetini düşüren üyelik paketleri sunuyor. Güncel koşullar için kulübe WhatsApp'tan ({phone}) ulaşın."
      ],
      [
       "İki kişi kort kiralayabilir miyiz?",
@@ -119,7 +119,7 @@
      ],
      [
       "Ödeme nasıl yapılır?",
-      "V7 Padel Antalya, Matchpoint uygulaması üzerinden online kart ödemesi veya kulüpte ödeme kabul ediyor. Rezervasyon: uygulama veya WhatsApp +90 546 780 0877."
+      "V7 Padel Antalya, Matchpoint uygulaması üzerinden online kart ödemesi veya kulüpte ödeme kabul ediyor. Rezervasyon: uygulama veya WhatsApp {phone}."
      ]
     ]
    },
@@ -139,7 +139,7 @@
      ],
      [
       "Есть ли членство в падел-клубе Антальи?",
-      "V7 Padel Antalya предлагает пакеты членства, снижающие стоимость сессии для регулярных игроков. Актуальные условия — в WhatsApp клуба: +90 546 780 0877."
+      "V7 Padel Antalya предлагает пакеты членства, снижающие стоимость сессии для регулярных игроков. Актуальные условия — в WhatsApp клуба: {phone}."
      ],
      [
       "Можно ли снять корт на двоих?",
@@ -151,7 +151,7 @@
      ],
      [
       "Как оплатить корт?",
-      "V7 Padel Antalya принимает оплату картой онлайн через приложение Matchpoint или на месте в клубе. Бронирование: приложение или WhatsApp +90 546 780 0877."
+      "V7 Padel Antalya принимает оплату картой онлайн через приложение Matchpoint или на месте в клубе. Бронирование: приложение или WhatsApp {phone}."
      ]
     ]
    }
@@ -165,7 +165,7 @@
    "faqs": [
     [
      "Where can I take padel lessons in Antalya?",
-     "V7 Padel Antalya (Konyaaltı, Hürriyet Cad. No: 51) offers private and group coaching for all levels, run by qualified coaches. Contact the club via WhatsApp (+90 546 780 0877) or the Matchpoint app for the current coaching schedule and pricing."
+     "V7 Padel Antalya (Konyaaltı, Hürriyet Cad. No: 51) offers private and group coaching for all levels, run by qualified coaches. Contact the club via WhatsApp ({phone}) or the Matchpoint app for the current coaching schedule and pricing."
     ],
     [
      "Can a complete beginner take padel lessons in Antalya?",
@@ -181,7 +181,7 @@
     ],
     [
      "Can I book a padel lesson as a tourist on holiday in Antalya?",
-     "Yes — one-off private or group lessons are available without membership. Book in advance via WhatsApp (+90 546 780 0877) to confirm coach availability, especially in peak summer months."
+     "Yes — one-off private or group lessons are available without membership. Book in advance via WhatsApp ({phone}) to confirm coach availability, especially in peak summer months."
     ],
     [
      "Is there an intensive padel training camp in Antalya?",
@@ -196,7 +196,7 @@
     "faqs": [
      [
       "Antalya'da padel dersini nereden alabilirim?",
-      "V7 Padel Antalya (Konyaaltı, Hürriyet Cad. No: 51) her seviye için bireysel ve grup dersleri sunuyor; dersleri nitelikli antrenörler veriyor. Program ve uygunluk için WhatsApp: +90 546 780 0877."
+      "V7 Padel Antalya (Konyaaltı, Hürriyet Cad. No: 51) her seviye için bireysel ve grup dersleri sunuyor; dersleri nitelikli antrenörler veriyor. Program ve uygunluk için WhatsApp: {phone}."
      ],
      [
       "Hiç oynamamış biri ders alabilir mi?",
@@ -204,7 +204,7 @@
      ],
      [
       "Antalya'da padel dersi ne kadar?",
-      "Fiyat formata (bireysel/grup) ve süreye göre değişiyor. Güncel tarife için V7 Padel Antalya'ya doğrudan ulaşın — fiyatlar sezonluk güncellenebiliyor. WhatsApp: +90 546 780 0877."
+      "Fiyat formata (bireysel/grup) ve süreye göre değişiyor. Güncel tarife için V7 Padel Antalya'ya doğrudan ulaşın — fiyatlar sezonluk güncellenebiliyor. WhatsApp: {phone}."
      ],
      [
       "Çocuklar için padel dersi var mı?",
@@ -212,7 +212,7 @@
      ],
      [
       "Tatildeyken tek seferlik ders alabilir miyim?",
-      "Evet — üyelik olmadan tek seferlik bireysel veya grup dersi mümkün. Antrenör uygunluğu için WhatsApp'tan (+90 546 780 0877) önceden rezervasyon yapın."
+      "Evet — üyelik olmadan tek seferlik bireysel veya grup dersi mümkün. Antrenör uygunluğu için WhatsApp'tan ({phone}) önceden rezervasyon yapın."
      ],
      [
       "Antalya'da yoğun padel kampı var mı?",
@@ -228,7 +228,7 @@
     "faqs": [
      [
       "Где взять уроки падела в Анталье?",
-      "V7 Padel Antalya (Коньяалты, Hürriyet Cad. No: 51) проводит индивидуальные и групповые тренировки для всех уровней с квалифицированными тренерами. Расписание и запись — WhatsApp +90 546 780 0877."
+      "V7 Padel Antalya (Коньяалты, Hürriyet Cad. No: 51) проводит индивидуальные и групповые тренировки для всех уровней с квалифицированными тренерами. Расписание и запись — WhatsApp {phone}."
      ],
      [
       "Можно ли начать с нуля?",
@@ -236,7 +236,7 @@
      ],
      [
       "Сколько стоит урок падела в Анталье?",
-      "Цена зависит от формата (индивидуально/группа) и длительности. Актуальный прайс уточняйте напрямую в V7 Padel Antalya — тарифы могут обновляться по сезону. WhatsApp: +90 546 780 0877."
+      "Цена зависит от формата (индивидуально/группа) и длительности. Актуальный прайс уточняйте напрямую в V7 Padel Antalya — тарифы могут обновляться по сезону. WhatsApp: {phone}."
      ],
      [
       "Есть ли занятия для детей?",
@@ -244,14 +244,15 @@
      ],
      [
       "Я в отпуске — можно разовое занятие?",
-      "Да — разовые индивидуальные или групповые уроки доступны без членства. Бронируйте заранее через WhatsApp (+90 546 780 0877), чтобы подтвердить свободного тренера."
+      "Да — разовые индивидуальные или групповые уроки доступны без членства. Бронируйте заранее через WhatsApp ({phone}), чтобы подтвердить свободного тренера."
      ],
      [
       "Бывают ли интенсивы/кэмпы по паделу в Анталье?",
       "V7 Padel Antalya проводит кэмпы, включая сессии с приглашёнными тренерами. Многоязычная команда (TR/EN/RU/UA/DE) собирает на кэмпы игроков из разных стран."
      ]
     ]
-   }
+   },
+   "wa_code": "HUB-DERS"
   },
   {
    "slug": "padel-antalya-open-play",
@@ -262,7 +263,7 @@
    "faqs": [
     [
      "Can I play padel in Antalya if I don't know anyone?",
-     "Yes. V7 Padel Antalya runs regular open games where players join as individuals and are matched into groups of four by level. Message the club on WhatsApp (+90 546 780 0877) and ask to be added to the next open session — staff are multilingual (TR/EN/RU/UA/DE)."
+     "Yes. V7 Padel Antalya runs regular open games where players join as individuals and are matched into groups of four by level. Message the club on WhatsApp ({phone}) and ask to be added to the next open session — staff are multilingual (TR/EN/RU/UA/DE)."
     ],
     [
      "What is a padel open game?",
@@ -270,7 +271,7 @@
     ],
     [
      "How do I join an open padel game in Antalya?",
-     "Contact V7 Padel Antalya via WhatsApp (+90 546 780 0877) or the Matchpoint app and ask about the next open game or mixer. The club will confirm timing, level and the court fee (same as regular court hire: 2,000 TL / 60 min split between four players)."
+     "Contact V7 Padel Antalya via WhatsApp ({phone}) or the Matchpoint app and ask about the next open game or mixer. The club will confirm timing, level and the court fee (same as regular court hire: 2,000 TL / 60 min split between four players)."
     ],
     [
      "Is there a padel community in Antalya I can join?",
@@ -299,7 +300,7 @@
     ],
     [
      "Can tourists or visitors join a padel tournament in Antalya?",
-     "Yes — the weekly formats at V7 Padel Antalya are open sign-up, and 'Mexicano All Levels' is specifically designed to mix players of different levels (partners rotate every round, so you don't need to bring a partner). Staff speak TR/EN/RU/UA/DE. Book via the Matchpoint app or WhatsApp +90 546 780 0877; rackets and balls can be rented at the club."
+     "Yes — the weekly formats at V7 Padel Antalya are open sign-up, and 'Mexicano All Levels' is specifically designed to mix players of different levels (partners rotate every round, so you don't need to bring a partner). Staff speak TR/EN/RU/UA/DE. Book via the Matchpoint app or WhatsApp {phone}; rackets and balls can be rented at the club."
     ],
     [
      "How do ranked padel tournaments work in Antalya?",
@@ -311,7 +312,7 @@
     ],
     [
      "Where can I see the current padel tournament schedule for Antalya?",
-     "The live schedule with dates and sign-up is on racket.id (search for V7 Padel Antalya) and announced on Instagram @v7padel_antalya. For same-week availability, the fastest way is WhatsApp +90 546 780 0877 — the club runs 6-8 events in a typical week."
+     "The live schedule with dates and sign-up is on racket.id (search for V7 Padel Antalya) and announced on Instagram @v7padel_antalya. For same-week availability, the fastest way is WhatsApp {phone} — the club runs 6-8 events in a typical week."
     ],
     [
      "Do other clubs in Antalya run padel tournaments?",
@@ -330,7 +331,7 @@
      ],
      [
       "Turnuvaya katılmak için partner gerekli mi?",
-      "Hayır — özellikle 'Mexicano All Levels' formatı farklı seviyelerdeki oyuncuları karıştırmak için tasarlandı: her turda partnerler değişir, bu yüzden partner getirmenize gerek yok. Kayıt Matchpoint uygulaması veya WhatsApp +90 546 780 0877 üzerinden; raket ve top kulüpte kiralanabilir."
+      "Hayır — özellikle 'Mexicano All Levels' formatı farklı seviyelerdeki oyuncuları karıştırmak için tasarlandı: her turda partnerler değişir, bu yüzden partner getirmenize gerek yok. Kayıt Matchpoint uygulaması veya WhatsApp {phone} üzerinden; raket ve top kulüpte kiralanabilir."
      ],
      [
       "Puanlı padel turnuvaları nasıl çalışıyor?",
@@ -342,7 +343,7 @@
      ],
      [
       "Güncel turnuva programını nereden görebilirim?",
-      "Tarihler ve kayıt için canlı program racket.id'de (V7 Padel Antalya'yı aratın) ve Instagram @v7padel_antalya hesabında duyuruluyor. Aynı hafta için en hızlı yol WhatsApp +90 546 780 0877 — kulüp tipik bir haftada 6-8 etkinlik düzenliyor."
+      "Tarihler ve kayıt için canlı program racket.id'de (V7 Padel Antalya'yı aratın) ve Instagram @v7padel_antalya hesabında duyuruluyor. Aynı hafta için en hızlı yol WhatsApp {phone} — kulüp tipik bir haftada 6-8 etkinlik düzenliyor."
      ],
      [
       "Antalya'da başka kulüpler turnuva düzenliyor mu?",
@@ -362,7 +363,7 @@
      ],
      [
       "Нужен ли партнёр для участия?",
-      "Нет — формат «Mexicano All Levels» специально устроен так, что партнёры меняются каждый раунд, приходить можно одному. Запись через приложение Matchpoint или WhatsApp +90 546 780 0877; ракетки и мячи есть в клубе."
+      "Нет — формат «Mexicano All Levels» специально устроен так, что партнёры меняются каждый раунд, приходить можно одному. Запись через приложение Matchpoint или WhatsApp {phone}; ракетки и мячи есть в клубе."
      ],
      [
       "Как работают рейтинговые турниры?",
@@ -374,7 +375,7 @@
      ],
      [
       "Где смотреть актуальное расписание турниров?",
-      "Живое расписание с датами и записью — на racket.id (ищите V7 Padel Antalya) и в Instagram @v7padel_antalya. Быстрее всего на этой неделе — WhatsApp +90 546 780 0877: клуб проводит 6-8 событий в типичную неделю."
+      "Живое расписание с датами и записью — на racket.id (ищите V7 Padel Antalya) и в Instagram @v7padel_antalya. Быстрее всего на этой неделе — WhatsApp {phone}: клуб проводит 6-8 событий в типичную неделю."
      ],
      [
       "Другие клубы Антальи проводят турниры?",
@@ -404,7 +405,7 @@
     ],
     [
      "Can tourists play padel in Türkiye?",
-     "Yes, and Antalya is the easiest city for it: V7 Padel (Konyaaltı) runs daily open games where solo travellers are matched by level, staff speak TR/EN/RU/UA/DE, and rackets are rented at the club. Court prices in Türkiye are low by European standards — at V7 a court is 2000 TL per hour (about 500 TL per person for four). Book via WhatsApp +90 546 780 0877 or the Matchpoint app."
+     "Yes, and Antalya is the easiest city for it: V7 Padel (Konyaaltı) runs daily open games where solo travellers are matched by level, staff speak TR/EN/RU/UA/DE, and rackets are rented at the club. Court prices in Türkiye are low by European standards — at V7 a court is 2000 TL per hour (about 500 TL per person for four). Book via WhatsApp {phone} or the Matchpoint app."
     ],
     [
      "How much does padel cost in Türkiye?",
@@ -435,7 +436,7 @@
      ],
      [
       "Turistler Türkiye'de padel oynayabilir mi?",
-      "Evet — ve bunun için en kolay şehir Antalya: V7 Padel (Konyaaltı) her gün açık oyunlar düzenliyor, yalnız gelen oyuncular seviyesine göre eşleştiriliyor, ekip TR/EN/RU/UA/DE konuşuyor ve raket kulüpten kiralanabiliyor. Türkiye'de kort fiyatları Avrupa'ya göre düşük — V7'de kort saati 2000 TL (dört kişide kişi başı ≈500 TL). Rezervasyon: WhatsApp +90 546 780 0877 veya Matchpoint uygulaması."
+      "Evet — ve bunun için en kolay şehir Antalya: V7 Padel (Konyaaltı) her gün açık oyunlar düzenliyor, yalnız gelen oyuncular seviyesine göre eşleştiriliyor, ekip TR/EN/RU/UA/DE konuşuyor ve raket kulüpten kiralanabiliyor. Türkiye'de kort fiyatları Avrupa'ya göre düşük — V7'de kort saati 2000 TL (dört kişide kişi başı ≈500 TL). Rezervasyon: WhatsApp {phone} veya Matchpoint uygulaması."
      ],
      [
       "Türkiye'de padel ne kadar?",
@@ -467,7 +468,7 @@
      ],
      [
       "Может ли турист поиграть в падел в Турции?",
-      "Да, и проще всего это сделать в Анталье: V7 Padel (Коньяалты) ежедневно проводит открытые игры, одиночных игроков подбирают по уровню, персонал говорит на TR/EN/RU/UA/DE, ракетку можно взять в клубе. Цены на корты в Турции низкие по европейским меркам — в V7 корт стоит 2000 TL в час (около 500 TL с человека вчетвером). Бронь: WhatsApp +90 546 780 0877 или приложение Matchpoint."
+      "Да, и проще всего это сделать в Анталье: V7 Padel (Коньяалты) ежедневно проводит открытые игры, одиночных игроков подбирают по уровню, персонал говорит на TR/EN/RU/UA/DE, ракетку можно взять в клубе. Цены на корты в Турции низкие по европейским меркам — в V7 корт стоит 2000 TL в час (около 500 TL с человека вчетвером). Бронь: WhatsApp {phone} или приложение Matchpoint."
      ],
      [
       "Сколько стоит падел в Турции?",
@@ -585,6 +586,240 @@
      [
       "Где попробовать падел в Анталье?",
       "В Анталье есть специализированные падел-клубы; V7 Padel в Коньяалты (4 корта: 3 под крышей — тень и защита от дождя, 1 открытый) проводит open game для новичков и индивидуальные тренировки. Бронь — WhatsApp или приложение Matchpoint."
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "padel-court-booking-antalya",
+   "wa_code": "HUB-KORT",
+   "title": "How to Book a Padel Court in Antalya (2026) — Apps, WhatsApp, Prices",
+   "desc": "How padel court booking works in Antalya: Matchpoint app, WhatsApp booking, cancellation rules and how to get a court even without a partner.",
+   "h1": "How to book a padel court in Antalya",
+   "intro": "Booking a padel court in Antalya is simple once you know how clubs work: most take bookings through an app or WhatsApp, and community clubs will match you into a game if you come alone.",
+   "faqs": [
+    [
+     "How do I book a padel court in Antalya?",
+     "At V7 Padel Antalya (Konyaaltı) you can book through the Matchpoint app or simply by WhatsApp ({phone}). The club is open daily {hours_range}. Other clubs in the city usually take bookings via Instagram DM or phone."
+    ],
+    [
+     "Can I book a padel court in Antalya without a partner?",
+     "Yes. Community clubs run open games and mixers where solo players are matched by level into a foursome. At V7 Padel Antalya, message the club on WhatsApp and ask to join an open game — this is the normal way solo players get on court."
+    ],
+    [
+     "What is the cancellation policy for padel courts in Antalya?",
+     "Policies vary by club. At V7 Padel Antalya the cancellation window is 24 hours — cancel earlier than 24h before your slot to avoid losing the booking fee. Always confirm the club's current policy when booking."
+    ],
+    [
+     "Are padel courts in Antalya covered (playable in rain or heat)?",
+     "Partly. V7 Padel Antalya has 4 panoramic courts: 3 roofed (shade from sun and rain — not air-conditioned) and 1 open-air, so play continues in rain or summer heat under the roofed courts. Many other courts in the city are fully open-air."
+    ],
+    [
+     "What hours can you play padel in Antalya?",
+     "V7 Padel Antalya is open every day {hours_range}, so early-morning and late-night slots are available; evening prime time (about 18:00–22:00) books out fastest. Hotel and municipal courts usually keep shorter hours."
+    ]
+   ],
+   "tr": {
+    "title": "Antalya'da Padel Kortu Rezervasyonu (2026) — Uygulama, WhatsApp, Kurallar",
+    "desc": "Antalya'da padel kortu rezervasyonu nasıl yapılır: Matchpoint uygulaması, WhatsApp ile rezervasyon, iptal kuralları ve partnersiz oyun.",
+    "h1": "Antalya'da padel kortu rezervasyonu nasıl yapılır",
+    "intro": "Antalya'da padel kortu ayırtmak basit: çoğu kulüp uygulama veya WhatsApp üzerinden rezervasyon alır; tek gelirseniz topluluk kulüpleri sizi seviyenize göre bir oyuna yerleştirir.",
+    "faqs": [
+     [
+      "Antalya'da padel kortu rezervasyonu nasıl yapılır?",
+      "V7 Padel Antalya'da (Konyaaltı) rezervasyon Matchpoint uygulamasından veya doğrudan WhatsApp ile ({phone}) yapılır. Kulüp her gün {hours_range} açık. Şehirdeki diğer kulüpler genelde Instagram DM veya telefonla çalışır."
+     ],
+     [
+      "Partnerim yok — yine de oynayabilir miyim?",
+      "Evet. Topluluk kulüpleri açık oyunlar (open game / mixer) düzenler; tek oyuncular seviyeye göre dörtlüye eşleştirilir. V7 Padel Antalya'ya WhatsApp'tan yazıp açık oyuna katılmak istediğinizi söylemeniz yeterli."
+     ],
+     [
+      "İptal kuralı nedir?",
+      "Kulübe göre değişir. V7 Padel Antalya'da iptal süresi 24 saattir — saatinizden 24 saat önce iptal ederseniz ücret yanmaz. Rezervasyon yaparken kulübün güncel kuralını teyit edin."
+     ],
+     [
+      "Kortlar kapalı mı — yağmurda ve sıcakta oynanır mı?",
+      "Kısmen. V7 Padel Antalya'da 4 panoramik kort var: 3'ü üstü kapalı (güneş ve yağmurdan korur — klimalı değil), 1'i açık. Yağmurda ve yaz sıcağında kapalı kortlarda oyun devam eder. Şehirdeki birçok kort ise tamamen açık havada."
+     ],
+     [
+      "Antalya'da padel saat kaça kadar oynanır?",
+      "V7 Padel Antalya her gün {hours_range} açık — sabah erken ve gece geç saat de mümkün; akşam prime time (yaklaşık 18:00–22:00) en hızlı dolan dilim."
+     ]
+    ]
+   },
+   "ru": {
+    "title": "Как забронировать падел-корт в Анталье (2026) — приложение, WhatsApp, правила",
+    "desc": "Как устроена бронь падел-корта в Анталье: приложение Matchpoint, бронь через WhatsApp, правила отмены и игра без партнёра.",
+    "h1": "Как забронировать падел-корт в Анталье",
+    "intro": "Забронировать корт в Анталье просто: большинство клубов принимают бронь через приложение или WhatsApp, а если вы один — комьюнити-клубы подберут вам игру по уровню.",
+    "faqs": [
+     [
+      "Как забронировать падел-корт в Анталье?",
+      "В V7 Padel Antalya (Коньяалты) бронь — через приложение Matchpoint или просто в WhatsApp ({phone}). Клуб открыт ежедневно {hours_range}. Другие клубы города обычно бронируют через Instagram или по телефону."
+     ],
+     [
+      "Можно ли играть без партнёра?",
+      "Да. Комьюнити-клубы проводят открытые игры и миксеры, где одиночных игроков подбирают в четвёрку по уровню. Напишите V7 Padel Antalya в WhatsApp и попросите записать вас в открытую игру — так и играют те, кто приходит один."
+     ],
+     [
+      "Какие правила отмены брони?",
+      "У каждого клуба свои. В V7 Padel Antalya окно отмены — 24 часа: отмените раньше, чем за сутки, и оплата не сгорает. Уточняйте актуальное правило при брони."
+     ],
+     [
+      "Корты крытые? Можно играть в дождь и жару?",
+      "Частично. В V7 Padel Antalya 4 панорамных корта: 3 под крышей (защита от солнца и дождя — без кондиционирования) и 1 открытый. Под крышей игра продолжается и в дождь, и в летний зной. Многие другие корты города — полностью открытые."
+     ],
+     [
+      "До которого часа играют в падел в Анталье?",
+      "V7 Padel Antalya открыт ежедневно {hours_range} — есть и ранние утренние, и поздние слоты; вечерний прайм-тайм (~18:00–22:00) разбирают быстрее всего."
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "indoor-padel-antalya",
+   "wa_code": "HUB-KORT",
+   "title": "Indoor & Covered Padel Courts in Antalya (2026) — Play in Rain or Heat",
+   "desc": "Looking for indoor or covered padel in Antalya? What actually exists: roofed courts, open-air courts, and where to play in rain or summer heat.",
+   "h1": "Indoor and covered padel courts in Antalya",
+   "intro": "Antalya is hot in summer and rainy in winter, so 'indoor padel' is one of the most common questions. Here is what actually exists: most dedicated padel in Antalya is open-air or roofed (covered), not fully indoor air-conditioned halls.",
+   "faqs": [
+    [
+     "Are there indoor padel courts in Antalya?",
+     "Fully indoor, air-conditioned padel halls are rare in Antalya. The practical option is roofed (covered) courts: V7 Padel Antalya in Konyaaltı has 3 roofed panoramic courts (protected from sun and rain — not air-conditioned) plus 1 open-air court, open daily {hours_range}."
+    ],
+    [
+     "Where can I play padel in Antalya when it rains?",
+     "On roofed courts. At V7 Padel Antalya the 3 roofed courts stay playable in rain; the open-air court closes in heavy rain. In winter (Nov–Mar) roofed courts are the reliable choice."
+    ],
+    [
+     "How do you play padel in Antalya's summer heat?",
+     "Two ways: play under a roof (shade makes a big difference even without air conditioning) or shift to morning/evening slots. Clubs open early — V7 starts at 07:00 — and evenings after 18:00 are the busiest for a reason."
+    ],
+    [
+     "What is the difference between indoor, roofed and open-air padel courts?",
+     "Indoor = fully enclosed hall, often climate-controlled. Roofed (covered) = a roof over the court, open sides, natural airflow, protects from sun and rain. Open-air = no cover. In Antalya's climate roofed courts are the standard for year-round play."
+    ]
+   ],
+   "tr": {
+    "title": "Antalya'da Kapalı Padel Kortu (2026) — Yağmurda ve Sıcakta Nerede Oynanır",
+    "desc": "Antalya'da kapalı padel kortu arıyorsanız: üstü kapalı kortlar, açık kortlar ve yağmurda / yaz sıcağında nerede oynanır.",
+    "h1": "Antalya'da kapalı padel kortları",
+    "intro": "Antalya yazın sıcak, kışın yağmurlu — bu yüzden 'kapalı padel kortu' en çok sorulan sorulardan. Gerçek durum şu: Antalya'daki padel çoğunlukla açık havada veya üstü kapalı kortlarda oynanır; tam kapalı klimalı salon nadirdir.",
+    "faqs": [
+     [
+      "Antalya'da kapalı padel kortu var mı?",
+      "Tam kapalı, klimalı padel salonu Antalya'da nadir. Pratik seçenek üstü kapalı kortlar: Konyaaltı'ndaki V7 Padel Antalya'da 3 üstü kapalı panoramik kort (güneş ve yağmurdan korur — klimalı değil) ve 1 açık kort var; her gün {hours_range} açık."
+     ],
+     [
+      "Yağmurda padel nerede oynanır?",
+      "Üstü kapalı kortlarda. V7 Padel Antalya'daki 3 kapalı kort yağmurda oynanabilir; açık kort şiddetli yağmurda kapanır. Kışın (Kasım–Mart) kapalı kortlar güvenilir seçenektir."
+     ],
+     [
+      "Yaz sıcağında padel nasıl oynanır?",
+      "İki yol: üstü kapalı kortta oynayın (klima olmasa da gölge büyük fark yaratır) veya sabah/akşam saatlerine kayın. Kulüpler erken açılır — V7 sabah 07:00'de başlar; akşam 18:00 sonrası en yoğun dilimdir."
+     ],
+     [
+      "Kapalı kort, üstü kapalı kort ve açık kort farkı nedir?",
+      "Kapalı (indoor) = tamamen kapalı, çoğu zaman klimalı salon. Üstü kapalı = kortun üstünde çatı, yanlar açık, doğal hava akışı; güneş ve yağmurdan korur. Açık = örtüsüz. Antalya ikliminde yıl boyu oyun için standart, üstü kapalı kortlardır."
+     ]
+    ]
+   },
+   "ru": {
+    "title": "Крытые падел-корты в Анталье (2026) — где играть в дождь и жару",
+    "desc": "Ищете крытый падел в Анталье? Что есть на самом деле: корты под крышей, открытые корты, и где играть в дождь и летний зной.",
+    "h1": "Крытые падел-корты в Анталье",
+    "intro": "Летом в Анталье жарко, зимой дождливо — поэтому «крытый падел» спрашивают чаще всего. Реальная картина: падел в Анталье — это в основном открытые корты или корты под крышей; полностью закрытые залы с кондиционером — редкость.",
+    "faqs": [
+     [
+      "Есть ли в Анталье крытые падел-корты?",
+      "Полностью закрытые залы с климат-контролем в Анталье — редкость. Практичный вариант — корты под крышей: у V7 Padel Antalya в Коньяалты 3 панорамных корта под крышей (защита от солнца и дождя — без кондиционирования) и 1 открытый; клуб работает ежедневно {hours_range}."
+     ],
+     [
+      "Где играть в падел в дождь?",
+      "Под крышей. Три крытых корта V7 Padel Antalya играются в дождь; открытый корт в сильный дождь закрывается. Зимой (ноябрь–март) корты под крышей — надёжный выбор."
+     ],
+     [
+      "Как играть в падел в летнюю жару?",
+      "Два способа: играть под крышей (тень даёт большую разницу даже без кондиционера) или сдвигаться на утро/вечер. Клубы открываются рано — V7 с 07:00; вечер после 18:00 — самое востребованное время."
+     ],
+     [
+      "Чем отличается indoor, корт под крышей и открытый корт?",
+      "Indoor — полностью закрытый зал, часто с климатом. Под крышей — крыша над кортом, открытые борта, естественная вентиляция, защита от солнца и дождя. Открытый — без навеса. Для климата Антальи стандарт круглогодичной игры — корты под крышей."
+     ]
+    ]
+   }
+  },
+  {
+   "slug": "kids-padel-antalya",
+   "wa_code": "HUB-KIDS",
+   "title": "Padel for Kids in Antalya (2026) — Lessons, Groups, Prices",
+   "desc": "Padel lessons for children in Antalya: group and individual training, what age to start, prices and how to book a trial for your kid.",
+   "h1": "Padel for kids in Antalya",
+   "intro": "Padel is one of the easiest racket sports for children to start: the court is smaller, the racket is short and the ball is slower than tennis. Here is how kids' padel works in Antalya.",
+   "faqs": [
+    [
+     "Where can kids learn padel in Antalya?",
+     "V7 Padel Antalya (Konyaaltı) runs a padel school with group and individual training for children, daily {hours_range}. Contact the club by WhatsApp ({phone}) to ask about kids' groups and a first lesson."
+    ],
+    [
+     "How much do kids' padel lessons cost in Antalya?",
+     "At V7 Padel Antalya (2026 price list): group kids' lesson from 800 TL with a club coach (8-lesson pack 6,000 TL); individual kids' lesson from 2,600 TL (club coach) or 3,400 TL (head coach), with packs of 3/5/8/10 lessons cheaper per lesson. Prices change seasonally — confirm when booking."
+    ],
+    [
+     "What age can children start playing padel?",
+     "Most clubs take children from primary-school age; the smaller court and slower ball make padel easier to pick up than tennis. Ask the club to place your child in a group by age and level — a trial lesson is the usual way to start."
+    ],
+    [
+     "Is padel safe for children?",
+     "Padel is a low-impact sport: underarm serve, no heavy overhead smashes at beginner level, and the enclosed court keeps the ball in play. Kids play with coaches in structured groups, which keeps the game controlled and fun."
+    ]
+   ],
+   "tr": {
+    "title": "Antalya'da Çocuklar için Padel (2026) — Dersler, Gruplar, Fiyatlar",
+    "desc": "Antalya'da çocuklar için padel dersleri: grup ve özel dersler, kaç yaşında başlanır, fiyatlar ve deneme dersi.",
+    "h1": "Antalya'da çocuklar için padel",
+    "intro": "Padel, çocukların en kolay başladığı raket sporlarından: kort küçük, raket kısa, top tenise göre daha yavaş. Antalya'da çocuk padeli şöyle işliyor.",
+    "faqs": [
+     [
+      "Antalya'da çocuklar padeli nerede öğrenir?",
+      "Konyaaltı'ndaki V7 Padel Antalya'da çocuklar için grup ve özel derslerin olduğu bir padel okulu var; kulüp her gün {hours_range} açık. Çocuk grupları ve ilk ders için WhatsApp'tan ({phone}) yazabilirsiniz."
+     ],
+     [
+      "Çocuk padel dersi ne kadar?",
+      "V7 Padel Antalya'da (2026 fiyat listesi): grup çocuk dersi kulüp antrenörüyle 800 TL'den başlar (8 derslik paket 6.000 TL); özel çocuk dersi kulüp antrenörüyle 2.600 TL, baş antrenörle 3.400 TL — 3/5/8/10 derslik paketlerde ders başı fiyat düşer. Fiyatlar sezona göre değişebilir, rezervasyonda teyit edin."
+     ],
+     [
+      "Çocuklar kaç yaşında padele başlayabilir?",
+      "Çoğu kulüp ilkokul çağından itibaren çocuk alır; küçük kort ve yavaş top sayesinde padel tenisten daha kolay öğrenilir. Kulüpten çocuğunuzu yaşına ve seviyesine göre bir gruba yerleştirmesini isteyin — başlamanın normal yolu deneme dersidir."
+     ],
+     [
+      "Padel çocuklar için güvenli mi?",
+      "Padel düşük darbeli bir spor: servis alttan atılır, başlangıç seviyesinde sert smaç yoktur ve kapalı kort topu oyunda tutar. Çocuklar antrenör eşliğinde, yapılandırılmış gruplarda oynar — oyun hem kontrollü hem eğlencelidir."
+     ]
+    ]
+   },
+   "ru": {
+    "title": "Падел для детей в Анталье (2026) — занятия, группы, цены",
+    "desc": "Детские занятия паделом в Анталье: групповые и индивидуальные тренировки, с какого возраста начинать, цены и пробное занятие.",
+    "h1": "Падел для детей в Анталье",
+    "intro": "Падел — один из самых простых ракеточных видов спорта для детского старта: корт меньше, ракетка короткая, мяч медленнее теннисного. Вот как устроен детский падел в Анталье.",
+    "faqs": [
+     [
+      "Где детям учиться паделу в Анталье?",
+      "В V7 Padel Antalya (Коньяалты) работает школа падела с групповыми и индивидуальными тренировками для детей; клуб открыт ежедневно {hours_range}. Про детские группы и первое занятие напишите клубу в WhatsApp ({phone})."
+     ],
+     [
+      "Сколько стоят детские занятия паделом?",
+      "В V7 Padel Antalya (прайс 2026): групповое детское занятие от 800 TL с клубным тренером (пакет 8 занятий — 6 000 TL); индивидуальное детское от 2 600 TL (клубный тренер) или 3 400 TL (главный тренер), пакеты 3/5/8/10 занятий выгоднее за занятие. Цены меняются по сезону — уточняйте при записи."
+     ],
+     [
+      "С какого возраста дети играют в падел?",
+      "Большинство клубов берут детей с младшего школьного возраста; маленький корт и медленный мяч делают падел проще тенниса. Попросите клуб подобрать группу по возрасту и уровню — начинают обычно с пробного занятия."
+     ],
+     [
+      "Безопасен ли падел для детей?",
+      "Падел — спорт с низкой ударной нагрузкой: подача снизу, на начальном уровне нет жёстких смэшей, а закрытый корт удерживает мяч в игре. Дети занимаются с тренером в организованных группах — игра контролируемая и весёлая."
      ]
     ]
    }

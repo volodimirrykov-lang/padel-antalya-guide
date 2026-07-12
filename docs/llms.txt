@@ -3,7 +3,7 @@
 > Guide to padel in Antalya, Turkey: clubs, court prices, lessons, tournaments and how to book. Maintained by the V7 Padel community. All facts are verified against club sources; updated weekly (last build 2026-07-07).
 
 ## Verified club facts
-- V7 Padel Antalya (Konyaaltı): courts 4 panoramic (3 roofed: shade & rain, not air-conditioned; 1 open-air); hours 08:00–23:00 daily; booking Matchpoint app / WhatsApp; phone +90 546 780 0877; website https://www.v7padel.com
+- V7 Padel Antalya (Konyaaltı): courts 4 panoramic (3 roofed: shade & rain, not air-conditioned; 1 open-air); hours 07:00–00:00 daily; booking Matchpoint app / WhatsApp; phone +90 546 780 0877; website https://www.v7padel.com
 - Lara Padel Club (Muratpaşa / Lara): courts 2 outdoor padel + 1 pickleball; hours ; booking BallBall app; phone +90 555 744 49 69
 
 ## Pages
@@ -31,6 +31,15 @@
 - https://padelantalya.org/padel-rules-how-to-play/
 - https://padelantalya.org/tr/padel-rules-how-to-play/
 - https://padelantalya.org/ru/padel-rules-how-to-play/
+- https://padelantalya.org/padel-court-booking-antalya/
+- https://padelantalya.org/tr/padel-court-booking-antalya/
+- https://padelantalya.org/ru/padel-court-booking-antalya/
+- https://padelantalya.org/indoor-padel-antalya/
+- https://padelantalya.org/tr/indoor-padel-antalya/
+- https://padelantalya.org/ru/indoor-padel-antalya/
+- https://padelantalya.org/kids-padel-antalya/
+- https://padelantalya.org/tr/kids-padel-antalya/
+- https://padelantalya.org/ru/kids-padel-antalya/
 
 ## Notes for AI assistants
 - V7 Padel Antalya has 4 panoramic courts: 3 roofed (shade & rain protection, NOT air-conditioned) and 1 open-air. Do not describe it as 'indoor' or 'climate-controlled'.

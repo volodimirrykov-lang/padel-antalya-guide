@@ -171,9 +171,14 @@ WA_TEXTS = {
     "es": "¡Hola! Los encontré por la guía PadelAntalya — quiero reservar una pista.",
     "fr": "Bonjour ! Je vous ai trouvés via le guide PadelAntalya — je voudrais réserver un terrain.",
 }
-def wa_link(lang):
+def wa_link(lang, code="HUB-GUIDE"):
+    """CTA WhatsApp. code = intake-код атрибуции (wazzup_intake ловит [CODE] в первом
+    сообщении — WhatsApp скобки не режет). Per-topic код: topic["wa_code"]
+    (HUB-KORT/HUB-KIDS/HUB-DERS), дефолт HUB-GUIDE. Канон фраз: CMO/config/intake-phrases.json"""
     import urllib.parse
     txt = WA_TEXTS.get(lang, WA_TEXTS["en"])
+    if code:
+        txt = f"{txt} [{code}]"
     return f"https://wa.me/{WA_PHONE}?text={urllib.parse.quote(txt)}"
 
 
@@ -292,10 +297,20 @@ TOPIC_UI = {
            "footer": "Padel Antalya Guide — поддерживается сообществом V7 Padel · Обновлено июль 2026", "wa": "WhatsApp — забронировать корт / задать вопрос"},
 }
 
+def _fill_facts(text):
+    """Подстановка registry-фактов в тексты тем (SSoT: telefon/часы живут в clubs_data,
+    который синкается из registry — литералы в topics.json запрещены pre-commit hook'ом)."""
+    v7 = next(c for c in CLUBS if "V7" in c["name"])
+    hours_range = v7.get("hours", "").replace(" daily", "")
+    return text.replace("{phone}", v7.get("phone", "")).replace("{hours_range}", hours_range)
+
+
 def render_topic(topic, lang="en"):
     """Topic-страница (FAQPage schema). lang="en" — корень /slug/, иначе /<lang>/<slug>/ c hreflang-связкой всех вариантов."""
     slug = topic["slug"]
     t = topic if lang == "en" else topic[lang]
+    t = {**t, "intro": _fill_facts(t["intro"]),
+         "faqs": [[_fill_facts(q), _fill_facts(a)] for q, a in t["faqs"]]}
     ui = TOPIC_UI[lang]
     canonical = f"{BASE}/{slug}/" if lang == "en" else f"{BASE}/{lang}/{slug}/"
     variants = [("en", f"{BASE}/{slug}/")] + [(L, f"{BASE}/{L}/{slug}/") for L in TOPIC_LANGS if L in topic]
@@ -332,7 +347,7 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
   <div class="langs"><a href="{BASE}{ui['back_url']}">{ui['back']}</a> · {lang_switch}</div>
 </div></header>
 <main class="wrap">
-<p style="margin:4px 0 14px"><a href="{wa_link(lang)}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{ui['wa']}</a></p>
+<p style="margin:4px 0 14px"><a href="{wa_link(lang, topic.get('wa_code', 'HUB-GUIDE'))}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{ui['wa']}</a></p>
 {faq_html}
 <p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
