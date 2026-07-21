@@ -245,25 +245,30 @@ def club_card(club, t, lang="en"):
     return f'<div class="{cls}"><h3>{esc(club["name"])} {tag}</h3><table>{tr}</table></div>'
 
 
+def _location_node(c):
+    """SportsActivityLocation-нода клуба из registry (clubs_data → SSoT).
+    Общая для index (ItemList) и конверсионных topic-страниц — одна логика полей."""
+    node = {"@type": "SportsActivityLocation", "name": c["name"],
+            "address": {"@type": "PostalAddress", "streetAddress": c["address"],
+                        "addressLocality": c["area"].split(" /")[0], "addressRegion": "Antalya", "addressCountry": "TR"}}
+    if c.get("phone"): node["telephone"] = c["phone"]
+    if c.get("website"): node["url"] = c["website"]
+    if c.get("instagram"): node["sameAs"] = [f"https://www.instagram.com/{c['instagram']}"]
+    if c.get("lat"): node["geo"] = {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lng"]}
+    if c.get("hours"):
+        # из clubs_data "07:00–00:00 daily" → schema "Mo-Su 07:00-00:00" (был хардкод 08-23)
+        hm = re.match(r"(\d{2}:\d{2})[–-](\d{2}:\d{2})", c["hours"])
+        if hm:
+            node["openingHours"] = f"Mo-Su {hm.group(1)}-{hm.group(2)}"
+    if c.get("primary"):
+        node["priceRange"] = "₺₺"
+        node["additionalType"] = "https://schema.org/SportsClub"
+    return node
+
+
 def schema_jsonld(t):
-    items = []
-    for i, c in enumerate(CLUBS, 1):
-        node = {"@type": "SportsActivityLocation", "name": c["name"],
-                "address": {"@type": "PostalAddress", "streetAddress": c["address"],
-                            "addressLocality": c["area"].split(" /")[0], "addressRegion": "Antalya", "addressCountry": "TR"}}
-        if c.get("phone"): node["telephone"] = c["phone"]
-        if c.get("website"): node["url"] = c["website"]
-        if c.get("instagram"): node["sameAs"] = [f"https://www.instagram.com/{c['instagram']}"]
-        if c.get("lat"): node["geo"] = {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lng"]}
-        if c.get("hours"):
-            # из clubs_data "07:00–00:00 daily" → schema "Mo-Su 07:00-00:00" (был хардкод 08-23)
-            hm = re.match(r"(\d{2}:\d{2})[–-](\d{2}:\d{2})", c["hours"])
-            if hm:
-                node["openingHours"] = f"Mo-Su {hm.group(1)}-{hm.group(2)}"
-        if c.get("primary"):
-            node["priceRange"] = "₺₺"
-            node["additionalType"] = "https://schema.org/SportsClub"
-        items.append({"@type": "ListItem", "position": i, "item": node})
+    items = [{"@type": "ListItem", "position": i, "item": _location_node(c)}
+             for i, c in enumerate(CLUBS, 1)]
     article = {"@context": "https://schema.org", "@type": "Article", "headline": t["h1"],
                "about": "Padel in Antalya, Turkey", "inLanguage": [c for c, _, _ in LANGS],
                "dateModified": DATE, "publisher": {"@type": "Organization", "name": "Padel Antalya Guide"}}
@@ -368,6 +373,12 @@ def render_topic(topic, lang="en"):
                   "mainEntity": [{"@type": "Question", "name": q,
                                   "acceptedAnswer": {"@type": "Answer", "text": a}}
                                  for q, a in t["faqs"]]}
+    # entity-нода V7 только на КОНВЕРСИОННЫХ страницах (V7-специфичный wa_code),
+    # не на нейтральных гайдах (HUB-GUIDE) — там single-business schema = ложный сигнал
+    v7_schema = ""
+    if topic.get("wa_code", "HUB-GUIDE") != "HUB-GUIDE":
+        v7_node = {"@context": "https://schema.org", **_location_node(next(c for c in CLUBS if c.get("primary")))}
+        v7_schema = f'\n<script type="application/ld+json">{json.dumps(v7_node, ensure_ascii=False)}</script>'
     faq_html = "".join(
         f'<details class="card"><summary><strong>{esc(q)}</strong></summary>'
         f'<p style="margin-top:8px">{esc(a)}</p></details>'
@@ -384,7 +395,7 @@ def render_topic(topic, lang="en"):
 <link rel="canonical" href="{canonical}">
 {hreflang}
 <meta name="robots" content="index,follow">
-<script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>
+<script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>{v7_schema}
 <style>{CSS}
 details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</style>
 </head>
