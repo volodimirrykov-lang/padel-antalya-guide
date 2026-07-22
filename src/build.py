@@ -351,7 +351,7 @@ TOPIC_UI = {
     "en": {"back": "← Antalya padel guide", "back_url": "/", "see": 'See the full <a href="{home}">Antalya padel guide</a> for all clubs, prices and how to book.',
            "footer": "Padel Antalya Guide — maintained by the V7 Padel community · Updated July 2026", "wa": "WhatsApp — book a court / ask a question"},
     "tr": {"back": "← Antalya padel rehberi", "back_url": "/tr/", "see": 'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{home}">Antalya padel rehberine</a> bakın.',
-           "footer": "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026", "wa": "WhatsApp — kort ayırt / soru sor"},
+           "footer": "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026", "wa": "WhatsApp — kort ayırtın / soru sorun"},
     "ru": {"back": "← Гид по паделу в Анталье", "back_url": "/ru/", "see": 'Все клубы, цены и бронирование — в <a href="{home}">гиде по паделу в Анталье</a>.',
            "footer": "Padel Antalya Guide — поддерживается сообществом V7 Padel · Обновлено июль 2026", "wa": "WhatsApp — забронировать корт / задать вопрос"},
 }
