@@ -305,6 +305,12 @@ def render(code, path, native):
 <meta property="og:title" content="{esc(t['title'])}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
+<meta property="og:image" content="https://padelantalya.org/og-banner.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="{esc(t['desc'])}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://padelantalya.org/og-banner.png">
 <meta name="robots" content="index,follow">
 {schema_jsonld(t)}
 <style>{CSS}</style>
@@ -394,6 +400,15 @@ def render_topic(topic, lang="en"):
 <meta name="description" content="{esc(t['desc'])}">
 <link rel="canonical" href="{canonical}">
 {hreflang}
+<meta property="og:title" content="{esc(t['title'])}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="https://padelantalya.org/og-banner.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="{esc(t['desc'])}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://padelantalya.org/og-banner.png">
 <meta name="robots" content="index,follow">
 <script type="application/ld+json">{json.dumps(faq_schema, ensure_ascii=False)}</script>{v7_schema}
 <style>{CSS}
