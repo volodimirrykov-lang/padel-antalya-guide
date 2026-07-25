@@ -179,6 +179,56 @@ def esc(s):
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+try:
+    TOPICS = json.load(open(Path(__file__).parent / "topics.json"))["topics"]
+except FileNotFoundError:
+    TOPICS = []
+
+# Заголовок блока внутренних ссылок + пометка «страницы на английском» для локалей без перевода
+NAV_UI = {
+    "en": ("Guides and answers", ""),
+    "tr": ("Rehberler ve cevaplar", " (İngilizce)"),
+    "ru": ("Гиды и ответы", " (на английском)"),
+    "de": ("Ratgeber und Antworten", " (auf Englisch)"),
+    "es": ("Guías y respuestas", " (en inglés)"),
+    "fr": ("Guides et réponses", " (en anglais)"),
+    "uk": ("Гіди та відповіді", " (англійською)"),
+    "pl": ("Poradniki i odpowiedzi", " (po angielsku)"),
+}
+
+
+def topic_links(lang, exclude_slug=None):
+    """Ссылки на topic-страницы в языке lang (fallback на en, если перевода нет).
+
+    Зачем: без этих ссылок topic-страницы — сироты. Факт 25.07 (GSC URL Inspection):
+    Google знал только 8 языковых главных, ни одна из 12 topic-страниц (× локали)
+    не была обнаружена — sitemap в GSC не зарегистрирован, а ссылок с главных не было.
+    Отсюда 0 показов и 0 intake по HUB-кодам."""
+    out = []
+    for tp in TOPICS:
+        if tp["slug"] == exclude_slug:
+            continue
+        if lang in TOPIC_LANGS and lang in tp:
+            out.append((f"{BASE}/{lang}/{tp['slug']}/", tp[lang]["h1"], False))
+        else:
+            out.append((f"{BASE}/{tp['slug']}/", tp["h1"], lang != "en"))
+    return out
+
+
+def topic_nav(lang):
+    """Блок внутренних ссылок для языковой главной."""
+    links = topic_links(lang)
+    if not links:
+        return ""
+    head, en_note = NAV_UI.get(lang, NAV_UI["en"])
+    items = "".join(
+        f'<li style="margin:7px 0"><a href="{u}">{esc(label)}</a>'
+        + (f'<span style="color:#5b6b78;font-size:13px">{en_note}</span>' if is_en_fallback and en_note else "")
+        + "</li>"
+        for u, label, is_en_fallback in links)
+    return (f'<h2>{esc(head)}</h2>\n<ul style="padding-left:20px;margin:10px 0 0">{items}</ul>')
+
+
 def hreflang_block(cur_code):
     out = []
     for code, path, _ in LANGS:
@@ -332,6 +382,7 @@ def render(code, path, native):
 <p>{t['solo_txt']}</p>
 <h2>{esc(t['mfr'])}</h2>
 <p>{t['mfr_txt'].replace('{url}', MFR['url']).replace('{name}', esc(MFR['name']))}</p>
+{topic_nav(code)}
 </main>
 <footer class="wrap">Padel Antalya Guide — {t['footer']}</footer>
 </body>
@@ -391,6 +442,13 @@ def render_topic(topic, lang="en"):
         for q, a in t["faqs"])
     lang_switch = " · ".join(f'<a href="{u}">{L.upper()}</a>' for L, u in variants if L != lang)
     see_full = ui["see"].format(home=f"{BASE}{ui['back_url']}")
+    # перелинковка topic↔topic: полная сетка, чтобы краулер доходил до любой страницы за 2 клика от главной
+    _rel = topic_links(lang, exclude_slug=slug)
+    topic_nav_related = (
+        f'<h2 style="margin-top:34px">{esc(NAV_UI.get(lang, NAV_UI["en"])[0])}</h2>'
+        f'<ul style="padding-left:20px;margin:10px 0 0">'
+        + "".join(f'<li style="margin:7px 0"><a href="{u}">{esc(label)}</a></li>' for u, label, _ in _rel)
+        + "</ul>") if _rel else ""
     html = f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -423,6 +481,7 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
 <main class="wrap">
 <p style="margin:4px 0 14px"><a href="{wa_link(lang, topic.get('wa_code', 'HUB-GUIDE'))}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{ui['wa']}</a></p>
 {faq_html}
+{topic_nav_related}
 <p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
 <footer class="wrap">{ui['footer']}</footer>
