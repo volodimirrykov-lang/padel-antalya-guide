@@ -19,12 +19,14 @@ if ! git diff --quiet docs/ src/; then
     git add -A
     git commit --no-verify -q -m "weekly refresh: registry-sync + rebuild (lastmod $TODAY)"
     git push -q
-    # IndexNow: уведомить Bing о свежем sitemap
+    # IndexNow: уведомить Bing обо ВСЕХ URL сайта (было 4 захардкоженных — остальные
+    # 37 страниц сигнала не получали; 25.07 выяснилось, что Google их вообще не знал)
     KEY=$(basename docs/c28f01838621aec5b8c3b15df5ab867b.txt .txt)
-    curl -s -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json" --max-time 20 -d "{
-      \"host\": \"padelantalya.org\", \"key\": \"$KEY\",
-      \"urlList\": [\"https://padelantalya.org/sitemap.xml\", \"https://padelantalya.org/\", \"https://padelantalya.org/padel-tournaments-antalya/\", \"https://padelantalya.org/tr/padel-tournaments-antalya/\"]
-    }" -w " IndexNow:%{http_code}\n"
+    LIST=$(grep -o '<loc>[^<]*</loc>' docs/sitemap.xml | sed 's|<loc>||;s|</loc>||' \
+           | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))")
+    curl -s -X POST "https://api.indexnow.org/indexnow" -H "Content-Type: application/json" --max-time 25 \
+      -d "{\"host\":\"padelantalya.org\",\"key\":\"$KEY\",\"urlList\":$LIST}" \
+      -w " IndexNow:%{http_code}\n"
     echo "weekly refresh: pushed + pinged"
 else
     echo "weekly refresh: изменений нет (registry не менялся) — пуш пропущен"
