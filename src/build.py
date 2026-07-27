@@ -49,7 +49,7 @@ T = {
         "mfr_txt": "Many courts in Antalya and beyond are built locally. <a href='{url}' rel='nofollow'>{name}</a> is an Antalya-based padel court <strong>manufacturer</strong> (not a club): they design, produce and install courts for clubs and resorts worldwide.",
         "other": "For a wider list of courts (including Belek hotels), directory sites such as <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> are a good reference.",
         "lbl": {"area": "Area", "courts": "Courts", "hours": "Hours", "booking": "Booking", "phone": "Phone", "price": "Price", "links": "Links"},
-        "footer": "Maintained by the V7 Padel community · Updated July 2026 · We list only verified, publicly-open padel clubs.",
+        "footer": "Maintained by the V7 Padel Antalya team · We list only verified, publicly-open padel clubs. · Facts last checked: {d}",
     },
     "tr": {
         "title": "Antalya'da Padel — Kulüpler, Kortlar, Fiyatlar (2026 Rehberi)",
@@ -66,7 +66,7 @@ T = {
         "mfr_txt": "Antalya'daki ve dünyadaki birçok kort yerel olarak üretilir. <a href='{url}' rel='nofollow'>{name}</a> Antalya merkezli bir padel kort <strong>üreticisidir</strong> (kulüp değil): dünya çapında kulüpler ve tesisler için kort tasarlar, üretir ve kurar.",
         "other": "Daha geniş kort listesi için (Belek otelleri dahil) <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> gibi rehberlere bakabilirsiniz.",
         "lbl": {"area": "Bölge", "courts": "Kortlar", "hours": "Saatler", "booking": "Rezervasyon", "phone": "Telefon", "price": "Fiyat", "links": "Bağlantılar"},
-        "footer": "V7 Padel topluluğu tarafından güncellenir · Temmuz 2026 · Yalnızca doğrulanmış, halka açık kulüpleri listeliyoruz.",
+        "footer": "V7 Padel Antalya ekibi tarafından hazırlanır · Yalnızca doğrulanmış, halka açık kulüpleri listeliyoruz. · Bilgiler son kontrol: {d}",
     },
     "ru": {
         "title": "Падел в Анталье — клубы, корты, цены (гид 2026)",
@@ -83,7 +83,7 @@ T = {
         "mfr_txt": "Многие корты в Анталье и за её пределами производятся локально. <a href='{url}' rel='nofollow'>{name}</a> — это анталийский <strong>производитель</strong> падел-кортов (не клуб): проектирует, производит и устанавливает корты для клубов и курортов по всему миру.",
         "other": "Более широкий список кортов (включая отели Белека) — в каталогах вроде <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Район", "courts": "Корты", "hours": "Часы", "booking": "Бронь", "phone": "Телефон", "price": "Цена", "links": "Ссылки"},
-        "footer": "Поддерживается сообществом V7 Padel · Обновлено июль 2026 · Только проверенные публичные клубы.",
+        "footer": "Ведёт команда V7 Padel Antalya · Только проверенные публичные клубы. · Факты проверены: {d}",
     },
     "de": {
         "title": "Padel in Antalya — Clubs, Plätze, Preise (Guide 2026)",
@@ -100,7 +100,7 @@ T = {
         "mfr_txt": "Viele Plätze in Antalya und weltweit werden lokal gebaut. <a href='{url}' rel='nofollow'>{name}</a> ist ein in Antalya ansässiger Padelplatz-<strong>Hersteller</strong> (kein Club): entwirft, produziert und installiert Plätze für Clubs und Resorts weltweit.",
         "other": "Eine größere Platzliste (inkl. Belek-Hotels) bieten Verzeichnisse wie <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Gebiet", "courts": "Plätze", "hours": "Zeiten", "booking": "Buchung", "phone": "Telefon", "price": "Preis", "links": "Links"},
-        "footer": "Gepflegt von der V7 Padel Community · Aktualisiert Juli 2026 · Nur verifizierte, öffentliche Clubs.",
+        "footer": "Gepflegt vom V7 Padel Antalya Team · Nur verifizierte, öffentliche Clubs. · Fakten zuletzt geprüft: {d}",
     },
     "es": {
         "title": "Pádel en Antalya — clubes, pistas, precios (guía 2026)",
@@ -117,7 +117,7 @@ T = {
         "mfr_txt": "Muchas pistas en Antalya y el mundo se fabrican localmente. <a href='{url}' rel='nofollow'>{name}</a> es un <strong>fabricante</strong> de pistas de pádel con sede en Antalya (no un club): diseña, produce e instala pistas para clubes y resorts en todo el mundo.",
         "other": "Para una lista más amplia de pistas (incluidos hoteles de Belek), directorios como <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> son una buena referencia.",
         "lbl": {"area": "Zona", "courts": "Pistas", "hours": "Horario", "booking": "Reserva", "phone": "Teléfono", "price": "Precio", "links": "Enlaces"},
-        "footer": "Mantenida por la comunidad V7 Padel · Actualizado julio 2026 · Solo clubes verificados y abiertos al público.",
+        "footer": "Mantenida por el equipo de V7 Padel Antalya · Solo clubes verificados y abiertos al público. · Datos verificados: {d}",
     },
     "fr": {
         "title": "Padel à Antalya — clubs, terrains, prix (guide 2026)",
@@ -134,7 +134,7 @@ T = {
         "mfr_txt": "Beaucoup de terrains à Antalya et ailleurs sont fabriqués localement. <a href='{url}' rel='nofollow'>{name}</a> est un <strong>fabricant</strong> de terrains de padel basé à Antalya (pas un club) : il conçoit, produit et installe des terrains pour des clubs et resorts dans le monde entier.",
         "other": "Pour une liste plus large de terrains (y compris les hôtels de Belek), des annuaires comme <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a> sont une bonne référence.",
         "lbl": {"area": "Zone", "courts": "Terrains", "hours": "Horaires", "booking": "Réservation", "phone": "Téléphone", "price": "Prix", "links": "Liens"},
-        "footer": "Maintenu par la communauté V7 Padel · Mise à jour juillet 2026 · Uniquement des clubs vérifiés et ouverts au public.",
+        "footer": "Maintenu par l'équipe V7 Padel Antalya · Uniquement des clubs vérifiés et ouverts au public. · Faits vérifiés le : {d}",
     },
     "uk": {
         "title": "Падел в Анталії — клуби, корти, ціни (гід 2026)",
@@ -151,7 +151,7 @@ T = {
         "mfr_txt": "Багато кортів в Анталії та за її межами виробляються локально. <a href='{url}' rel='nofollow'>{name}</a> — це анталійський <strong>виробник</strong> падел-кортів (не клуб): проєктує, виробляє та встановлює корти для клубів і курортів по всьому світу.",
         "other": "Ширший список кортів (включно з готелями Белека) — у каталогах на кшталт <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Район", "courts": "Корти", "hours": "Години", "booking": "Бронь", "phone": "Телефон", "price": "Ціна", "links": "Посилання"},
-        "footer": "Підтримується спільнотою V7 Padel · Оновлено липень 2026 · Лише перевірені публічні клуби.",
+        "footer": "Веде команда V7 Padel Antalya · Лише перевірені публічні клуби. · Факти перевірено: {d}",
     },
     "pl": {
         "title": "Padel w Antalyi — kluby, korty, ceny (przewodnik 2026)",
@@ -168,7 +168,7 @@ T = {
         "mfr_txt": "Wiele kortów w Antalyi i poza nią powstaje lokalnie. <a href='{url}' rel='nofollow'>{name}</a> to antalyjski <strong>producent</strong> kortów do padla (nie klub): projektuje, produkuje i instaluje korty dla klubów i kurortów na całym świecie.",
         "other": "Szersza lista kortów (w tym hotele w Belek) — w katalogach takich jak <a href='https://padelkoy.com/en' rel='nofollow'>PadelKöy</a>.",
         "lbl": {"area": "Rejon", "courts": "Korty", "hours": "Godziny", "booking": "Rezerwacja", "phone": "Telefon", "price": "Cena", "links": "Linki"},
-        "footer": "Prowadzony przez społeczność V7 Padel · Aktualizacja lipiec 2026 · Tylko zweryfikowane, publiczne kluby.",
+        "footer": "Prowadzony przez zespół V7 Padel Antalya · Tylko zweryfikowane, publiczne kluby. · Dane sprawdzone: {d}",
     },
 }
 
@@ -384,7 +384,7 @@ def render(code, path, native):
 <p>{t['mfr_txt'].replace('{url}', MFR['url']).replace('{name}', esc(MFR['name']))}</p>
 {topic_nav(code)}
 </main>
-<footer class="wrap">Padel Antalya Guide — {t['footer']}</footer>
+<footer class="wrap">Padel Antalya Guide — {t['footer'].replace('{d}', DATE)}</footer>
 </body>
 </html>
 """
@@ -400,11 +400,11 @@ def render(code, path, native):
 TOPIC_LANGS = ["tr", "ru"]  # варианты помимо en; контент — ключи topic["tr"], topic["ru"]
 TOPIC_UI = {
     "en": {"back": "← Antalya padel guide", "back_url": "/", "see": 'See the full <a href="{home}">Antalya padel guide</a> for all clubs, prices and how to book.',
-           "footer": "Padel Antalya Guide — maintained by the V7 Padel community · Updated July 2026", "wa": "WhatsApp — book a court / ask a question"},
+           "footer": "Padel Antalya Guide — maintained by the V7 Padel Antalya team · Facts last checked: {d}", "wa": "WhatsApp — book a court / ask a question"},
     "tr": {"back": "← Antalya padel rehberi", "back_url": "/tr/", "see": 'Tüm kulüpler, fiyatlar ve rezervasyon için <a href="{home}">Antalya padel rehberine</a> bakın.',
-           "footer": "Padel Antalya Rehberi — V7 Padel topluluğu tarafından güncellenir · Temmuz 2026", "wa": "WhatsApp — kort ayırtın / soru sorun"},
+           "footer": "Padel Antalya Rehberi — V7 Padel Antalya ekibi tarafından hazırlanır · Bilgiler son kontrol: {d}", "wa": "WhatsApp — kort ayırtın / soru sorun"},
     "ru": {"back": "← Гид по паделу в Анталье", "back_url": "/ru/", "see": 'Все клубы, цены и бронирование — в <a href="{home}">гиде по паделу в Анталье</a>.',
-           "footer": "Padel Antalya Guide — поддерживается сообществом V7 Padel · Обновлено июль 2026", "wa": "WhatsApp — забронировать корт / задать вопрос"},
+           "footer": "Padel Antalya Guide — ведёт команда V7 Padel Antalya · Факты проверены: {d}", "wa": "WhatsApp — забронировать корт / задать вопрос"},
 }
 
 def _fill_facts(text):
@@ -484,7 +484,7 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
 {topic_nav_related}
 <p style="color:#5b6b78;font-size:13px;margin-top:20px">{see_full}</p>
 </main>
-<footer class="wrap">{ui['footer']}</footer>
+<footer class="wrap">{ui['footer'].replace('{d}', DATE)}</footer>
 </body>
 </html>
 """
@@ -513,7 +513,7 @@ def main():
     clubs = clubs.get("clubs") or clubs
     lines = ["# Padel Antalya Guide",
              "",
-             "> Guide to padel in Antalya, Turkey: clubs, court prices, lessons, tournaments and how to book. Maintained by the V7 Padel community. All facts are verified against club sources (V7 canonical registry); updated weekly (last build " + DATE + ").",
+             "> Guide to padel in Antalya, Turkey: clubs, court prices, lessons, tournaments and how to book. Maintained by the V7 Padel Antalya team. All facts are verified against club sources (V7 canonical registry); updated weekly (last build " + DATE + ").",
              "",
              "## Verified club facts"]
     for c in (clubs if isinstance(clubs, list) else clubs.values()):
