@@ -397,7 +397,7 @@ def render(code, path, native):
     return canonical
 
 
-TOPIC_LANGS = ["tr", "ru"]  # варианты помимо en; контент — ключи topic["tr"], topic["ru"]
+TOPIC_LANGS = ["tr", "ru", "uk"]  # варианты помимо en; контент — ключи topic["tr"], topic["ru"], topic["uk"]
 TOPIC_UI = {
     "en": {"back": "← Antalya padel guide", "back_url": "/", "see": 'See the full <a href="{home}">Antalya padel guide</a> for all clubs, prices and how to book.',
            "footer": "Padel Antalya Guide — maintained by the V7 Padel Antalya team · Facts last checked: {d}", "wa": "WhatsApp — book a court / ask a question"},
@@ -405,6 +405,8 @@ TOPIC_UI = {
            "footer": "Padel Antalya Rehberi — V7 Padel Antalya ekibi tarafından hazırlanır · Bilgiler son kontrol: {d}", "wa": "WhatsApp — kort ayırtın / soru sorun"},
     "ru": {"back": "← Гид по паделу в Анталье", "back_url": "/ru/", "see": 'Все клубы, цены и бронирование — в <a href="{home}">гиде по паделу в Анталье</a>.',
            "footer": "Padel Antalya Guide — ведёт команда V7 Padel Antalya · Факты проверены: {d}", "wa": "WhatsApp — забронировать корт / задать вопрос"},
+    "uk": {"back": "← Гід із падела в Анталії", "back_url": "/uk/", "see": 'Усі клуби, ціни та бронювання — у <a href="{home}">гіді з падела в Анталії</a>.',
+           "footer": "Padel Antalya Guide — веде команда V7 Padel Antalya · Факти перевірено: {d}", "wa": "WhatsApp — забронювати корт / поставити запитання"},
 }
 
 def _fill_facts(text):
