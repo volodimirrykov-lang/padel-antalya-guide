@@ -397,7 +397,7 @@ def render(code, path, native):
     return canonical
 
 
-TOPIC_LANGS = ["tr", "ru", "uk"]  # варианты помимо en; контент — ключи topic["tr"], topic["ru"], topic["uk"]
+TOPIC_LANGS = ["tr", "ru", "uk", "de", "pl"]  # de/pl добавлены 17.08: топ-2 и топ-4 туристов Антальи  # варианты помимо en; контент — ключи topic["tr"], topic["ru"], topic["uk"]
 TOPIC_UI = {
     "en": {"back": "← Antalya padel guide", "back_url": "/", "see": 'See the full <a href="{home}">Antalya padel guide</a> for all clubs, prices and how to book.',
            "footer": "Padel Antalya Guide — maintained by the V7 Padel Antalya team · Facts last checked: {d}", "wa": "WhatsApp — book a court / ask a question"},
@@ -405,6 +405,10 @@ TOPIC_UI = {
            "footer": "Padel Antalya Rehberi — V7 Padel Antalya ekibi tarafından hazırlanır · Bilgiler son kontrol: {d}", "wa": "WhatsApp — kort ayırtın / soru sorun"},
     "ru": {"back": "← Гид по паделу в Анталье", "back_url": "/ru/", "see": 'Все клубы, цены и бронирование — в <a href="{home}">гиде по паделу в Анталье</a>.',
            "footer": "Padel Antalya Guide — ведёт команда V7 Padel Antalya · Факты проверены: {d}", "wa": "WhatsApp — забронировать корт / задать вопрос"},
+    "de": {"back": "← Padel-Guide Antalya", "back_url": "/de/", "see": 'Alle Clubs, Preise und Buchung im <a href="{home}">Antalya-Padel-Guide</a>.',
+           "footer": "Padel Antalya Guide — gepflegt vom Team von V7 Padel Antalya · Fakten zuletzt geprüft: {d}", "wa": "WhatsApp — Platz buchen / Frage stellen"},
+    "pl": {"back": "← Przewodnik po padlu w Antalyi", "back_url": "/pl/", "see": 'Wszystkie kluby, ceny i rezerwacje — w <a href="{home}">przewodniku po padlu w Antalyi</a>.',
+           "footer": "Padel Antalya Guide — prowadzony przez zespół V7 Padel Antalya · Fakty sprawdzone: {d}", "wa": "WhatsApp — zarezerwuj kort / zadaj pytanie"},
     "uk": {"back": "← Гід із падела в Анталії", "back_url": "/uk/", "see": 'Усі клуби, ціни та бронювання — у <a href="{home}">гіді з падела в Анталії</a>.',
            "footer": "Padel Antalya Guide — веде команда V7 Padel Antalya · Факти перевірено: {d}", "wa": "WhatsApp — забронювати корт / поставити запитання"},
 }
@@ -427,6 +431,12 @@ PRICE_UI = {
     "ru": {"cap": "V7 Padel Анталья — цены на корты (TL)", "dur": "Длительность", "court": "За корт", "pp": "С человека (4 игрока)",
            "rows": ["60 минут", "90 минут", "2 часа"],
            "note": "Цены за корт, а не с игрока. Ракетки и мячи есть в клубе. Процентных скидок нет — вместо них бонус на баланс V7."},
+    "de": {"cap": "V7 Padel Antalya — Platzpreise (TL)", "dur": "Dauer", "court": "Pro Platz", "pp": "Pro Person (4 Spieler)",
+           "rows": ["60 Minuten", "90 Minuten", "2 Stunden"],
+           "note": "Preise gelten pro Platz, nicht pro Spieler. Schläger und Bälle im Club verfügbar. Keine Prozentrabatte — stattdessen Treuebonus auf das V7-Guthaben."},
+    "pl": {"cap": "V7 Padel Antalya — ceny kortów (TL)", "dur": "Czas", "court": "Za kort", "pp": "Od osoby (4 graczy)",
+           "rows": ["60 minut", "90 minut", "2 godziny"],
+           "note": "Ceny za kort, nie od gracza. Rakiety i piłki dostępne w klubie. Bez rabatów procentowych — zamiast tego bonus lojalnościowy na saldo V7."},
     "uk": {"cap": "V7 Padel Анталія — ціни на корти (TL)", "dur": "Тривалість", "court": "За корт", "pp": "З людини (4 гравці)",
            "rows": ["60 хвилин", "90 хвилин", "2 години"],
            "note": "Ціни за корт, а не з гравця. Ракетки та м'ячі є в клубі. Відсоткових знижок немає — натомість бонус на баланс V7."},
