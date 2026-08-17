@@ -510,6 +510,9 @@ def main():
                     urls.append(render_topic(tp, lang=L))
     except FileNotFoundError:
         pass
+    # автостраница турниров (src/tournaments_page.py, крон 3р/день) — в sitemap и llms.txt,
+    # чтобы Google и AI-краулеры её находили; сама страница здесь НЕ собирается
+    urls += [f"{BASE}/{p}tournaments-antalya-this-week/" for p in ("", "tr/", "ru/", "uk/")]
     # llms.txt — карта фактов для AI-краулеров (https://llmstxt.org), генерится из тех же verified-данных
     clubs = json.load(open(Path(__file__).parent / "clubs_data.json"))
     clubs = clubs.get("clubs") or clubs
