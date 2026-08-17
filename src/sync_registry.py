@@ -46,6 +46,15 @@ price = (f"{p['court_60min']['per_court']} TL / 60 min "
          f"{p['court_120min']['per_court']} TL / 2h")
 set_field("price", price)
 
+# структурные цены для авто-таблицы на странице цен (build.py, price-топик).
+# Отдельными полями, а не строкой: таблица рендерится из чисел, при смене прайса
+# в registry обновится сама следующим build'ом.
+set_field("pricing", {
+    "court_60": p["court_60min"]["per_court"], "court_60_pp": p["court_60min"]["per_person"],
+    "court_90": p["court_90min"]["per_court"], "court_90_pp": p["court_90min"]["per_person"],
+    "court_120": p["court_120min"]["per_court"], "court_120_pp": p["court_120min"]["per_person"],
+})
+
 # instagram
 ig = club["contacts"].get("instagram_main", "").lstrip("@")
 if ig:

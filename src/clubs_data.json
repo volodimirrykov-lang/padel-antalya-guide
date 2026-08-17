@@ -19,7 +19,15 @@
    "website": "https://www.v7padel.com",
    "price": "2000 TL / 60 min (≈500 TL pp for four), 3000 TL / 90 min, 4000 TL / 2h",
    "lat": 36.8763,
-   "lng": 30.6357
+   "lng": 30.6357,
+   "pricing": {
+    "court_60": 2000,
+    "court_60_pp": 500,
+    "court_90": 3000,
+    "court_90_pp": 750,
+    "court_120": 4000,
+    "court_120_pp": 1000
+   }
   },
   {
    "name": "Lara Padel Club",

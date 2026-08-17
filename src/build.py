@@ -417,6 +417,42 @@ def _fill_facts(text):
     return text.replace("{phone}", v7.get("phone", "")).replace("{hours_range}", hours_range)
 
 
+PRICE_UI = {
+    "en": {"cap": "V7 Padel Antalya — court prices (TRY)", "dur": "Duration", "court": "Per court", "pp": "Per person (4 players)",
+           "rows": ["60 minutes", "90 minutes", "2 hours"],
+           "note": "Prices are per court, not per player. Rackets and balls available at the club. No percentage discounts — loyalty bonus on the V7 balance instead."},
+    "tr": {"cap": "V7 Padel Antalya — kort fiyatları (TL)", "dur": "Süre", "court": "Kort başına", "pp": "Kişi başı (4 oyuncu)",
+           "rows": ["60 dakika", "90 dakika", "2 saat"],
+           "note": "Fiyatlar kort başınadır, oyuncu başına değil. Raket ve top kulüpte mevcut. Yüzde indirim yok — bunun yerine V7 bakiyesine sadakat bonusu."},
+    "ru": {"cap": "V7 Padel Анталья — цены на корты (TL)", "dur": "Длительность", "court": "За корт", "pp": "С человека (4 игрока)",
+           "rows": ["60 минут", "90 минут", "2 часа"],
+           "note": "Цены за корт, а не с игрока. Ракетки и мячи есть в клубе. Процентных скидок нет — вместо них бонус на баланс V7."},
+    "uk": {"cap": "V7 Padel Анталія — ціни на корти (TL)", "dur": "Тривалість", "court": "За корт", "pp": "З людини (4 гравці)",
+           "rows": ["60 хвилин", "90 хвилин", "2 години"],
+           "note": "Ціни за корт, а не з гравця. Ракетки та м'ячі є в клубі. Відсоткових знижок немає — натомість бонус на баланс V7."},
+}
+
+
+def price_table(lang):
+    """Авто-таблица цен из clubs_data.pricing (синк из registry). Нет pricing — нет таблицы."""
+    v7 = next((c for c in CLUBS if c.get("primary")), None)
+    pr = (v7 or {}).get("pricing")
+    if not pr:
+        return ""
+    ui = PRICE_UI.get(lang, PRICE_UI["en"])
+    rows = ""
+    for label, k in zip(ui["rows"], ("court_60", "court_90", "court_120")):
+        rows += (f'<tr><td style="padding:7px 6px">{label}</td>'
+                 f'<td style="padding:7px 6px"><strong>{pr[k]} TL</strong></td>'
+                 f'<td style="padding:7px 6px">{pr[k + "_pp"]} TL</td></tr>')
+    return (f'<h2 style="margin-top:6px">{ui["cap"]}</h2>'
+            f'<table style="width:100%;border-collapse:collapse;margin:10px 0 6px">'
+            f'<thead><tr style="text-align:left;border-bottom:2px solid #ddd">'
+            f'<th style="padding:8px 6px">{ui["dur"]}</th><th style="padding:8px 6px">{ui["court"]}</th>'
+            f'<th style="padding:8px 6px">{ui["pp"]}</th></tr></thead><tbody>' + rows +
+            f'</tbody></table><p style="color:#555;font-size:14px">{ui["note"]}</p>')
+
+
 def render_topic(topic, lang="en"):
     """Topic-страница (FAQPage schema). lang="en" — корень /slug/, иначе /<lang>/<slug>/ c hreflang-связкой всех вариантов."""
     slug = topic["slug"]
@@ -481,6 +517,7 @@ details summary{{cursor:pointer;font-size:15px}}details{{padding:14px 18px}}</st
   <div class="langs"><a href="{BASE}{ui['back_url']}">{ui['back']}</a> · {lang_switch}</div>
 </div></header>
 <main class="wrap">
+{price_table(lang) if slug == "padel-court-prices-antalya" else ""}
 <p style="margin:4px 0 14px"><a href="{wa_link(lang, topic.get('wa_code', 'HUB-GUIDE'))}" rel="nofollow" style="display:inline-block;background:#0aBaB5;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700">{ui['wa']}</a></p>
 {faq_html}
 {topic_nav_related}
