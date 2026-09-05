@@ -31,7 +31,24 @@ set_field("phone", club["contacts"]["phone"])
 set_field("address", club["identity"]["address"])
 # 12.07: канон часов = facility.hours (Olya 07.07: 07:00-00:00), НЕ sales.hours —
 # старый код с fallback "08:00" молча держал сателлит на протухших часах
-hours = club.get("facility", {}).get("hours") or club.get("sales", {}).get("hours") or ""
+# 05.09: часы берём НА ДАТУ из working_hours.periods, а не строкой facility.hours.
+# Повод: владелец сменил режим на 08:00-00:00 с 07.09, строку в реестре обновили 05.09 —
+# и сателлит на ближайшем прогоне опубликовал бы «с 08:00», пока клуб ещё открыт с 07:00.
+# Строка facility.hours осталась запасным путём, если периодов нет.
+import datetime as _dt
+_fac = club.get("facility", {})
+_today = _dt.date.today()
+_cur = None
+for _per in (_fac.get("working_hours") or {}).get("periods") or []:
+    try:
+        _frm = _dt.date.fromisoformat(_per["from"])
+    except Exception:
+        continue
+    _to = _per.get("to")
+    if _frm <= _today and (not _to or _today <= _dt.date.fromisoformat(_to)):
+        _cur = _per
+hours = (f"{_cur['open']}-{_cur['close']}" if _cur
+         else (_fac.get("hours") or club.get("sales", {}).get("hours") or ""))
 m = __import__("re").match(r"(\d{2}:\d{2})-(\d{2}:\d{2})", str(hours))
 if m:
     set_field("hours", f"{m.group(1)}–{m.group(2)} daily")
@@ -61,7 +78,13 @@ if ig:
     set_field("instagram", ig)
 
 # валидация художественного описания кортов против registry
-cc = club["facility"]["courts_count"]
+# 05.09: courts_count в реестре НЕТ — есть список courts_ids (тот же дефект, что ловил
+# story_free_slots 30.08). Из-за KeyError синк падал ЦЕЛИКОМ, и сателлит переставал
+# обновляться молча — данные в src/data стояли с последнего удачного прогона.
+_f = club["facility"]
+cc = _f.get("courts_count") or len(_f.get("courts_ids") or [])
+if not cc:
+    sys.exit("в реестре нет ни courts_count, ни courts_ids — не выдумываю число кортов")
 if str(cc) not in v7.get("courts", ""):
     print(f"WARN: courts wording не содержит courts_count={cc} из registry — проверь руками: {v7.get('courts')}", file=sys.stderr)
 # запрещённые формулировки не должны просочиться
