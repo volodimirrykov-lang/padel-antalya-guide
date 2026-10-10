@@ -278,7 +278,14 @@ def club_card(club, t, lang="en"):
     rows = [(L["area"], club["area"]), (L["courts"], club["courts"])]
     if club.get("hours"):
         rows.append((L["hours"], club["hours"]))
-    phone_html = f' · <a href="{wa_link(lang)}" rel="nofollow">WhatsApp {club["phone"]}</a>' if club.get("phone") else ""
+    # чужой клуб — ссылка на ЕГО номер; WhatsApp V7 с intake-кодом только у primary
+    # (до 10.10 карточка Lara подписывала их номер, а вела в WhatsApp V7)
+    if not club.get("phone"):
+        phone_html = ""
+    elif club.get("primary"):
+        phone_html = f' · <a href="{wa_link(lang)}" rel="nofollow">WhatsApp {club["phone"]}</a>'
+    else:
+        phone_html = f' · <a href="tel:{club["phone"].replace(" ", "")}" rel="nofollow">{club["phone"]}</a>'
     rows.append((L["booking"], esc(club["booking"]) + phone_html))
     if club.get("price"):
         rows.append((L["price"], esc(club["price"])))
